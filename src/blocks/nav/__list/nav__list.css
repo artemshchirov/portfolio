@@ -1,0 +1,23 @@
+.nav__list {
+  flex-direction: column;
+  padding: 4em 0;
+  position: absolute;
+  right: 0;
+  left: 0;
+  top: 5em;
+  background-color: var(--clr-bg);
+  width: 0;
+  overflow: hidden;
+  transition: width 0.2s ease-in-out;
+}
+
+.nav-list.opened {
+  width: 100%;
+}
+
+@media screen and (min-width: 600px) {
+  .nav__list {
+    margin-right: 1.5em;
+    display: flex;
+  }
+}
