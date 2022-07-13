@@ -1,0 +1,13 @@
+.button_type_icon {
+  padding: 0;
+  font-size: 1.2rem;
+}
+
+.button_type_icon:hover,
+.button_type_icon:focus {
+  color: var(--clr-primary);
+}
+
+.button_type_icon:active {
+  transform: translateY(-5px);
+}
