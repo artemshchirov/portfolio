@@ -1,13 +1,11 @@
-import React from "react";
-
 const Main = () => {
   return (
     <main className="content">
       <div className="about center">
-        <h1>
+        <h1 className="about__title">
           Hi, I am <span className="about__name">Artem Shirov.</span>
         </h1>
-        <h2 className="about__role">A Front end Developer.</h2>
+        <h2 className="about__role">A junior Front end Developer.</h2>
         <p className="about__description">
           Consectetur neque sed quam molestiae consectetur nesciunt sit alias
           Vitae libero perferendis reprehenderit optio veritatis Accusantium at
@@ -174,7 +172,7 @@ const Main = () => {
         </ul>
       </section>
 
-      <section className="section contact center" id="contact">
+      <section className="contact section center" id="contact">
         <h2 className="title contact__title">Contact</h2>
         <a href="mailto:artemschirov@gmail.com">
           <span className="button button_type_outline">Email me</span>

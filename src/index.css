@@ -1,7 +1,7 @@
 @import url(./vendor/normalize.css);
 @import url(./vendor/fonts/fonts.css);
 
-@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:regular,bold,italic&subset=latin,latin-ext');
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:regular,bold,italic&subset=latin,latin-ext");
 
 /* page */
 @import url(./blocks/page/page.css);
@@ -31,6 +31,7 @@
 @import url(./blocks/nav/__hamburger/nav__hamburger.css);
 
 @import url(./blocks/about/about.css);
+@import url(./blocks/about/__title/about__title.css);
 @import url(./blocks/about/__name/about__name.css);
 @import url(./blocks/about/__role/about__role.css);
 @import url(./blocks/about/__description/about__description.css);
@@ -57,3 +58,9 @@
 
 /* footer */
 @import url(./blocks/footer/footer.css);
+@import url(./blocks/footer/__link/footer__linkl.css);
+
+@import url(./blocks/scrollup/scrollup.css);
+@import url(./blocks/scrollup/__link/scrollup__link.css);
+
+@import url(./blocks/section/section.css);
