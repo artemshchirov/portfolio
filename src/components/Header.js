@@ -1,10 +1,8 @@
 import React from "react";
 
 const Header = () => {
-  //TODO: fas fa-moon
-  // Разобраться с fas fas fa-moon fa-bars и их элементами
   return (
-    <header className="header">
+    <header className="header center">
       <h3>
         <a
           href="https://rajshekhar26.github.io/cleanfolio-minimal"

@@ -6,6 +6,11 @@
   z-index: 1;
 }
 
+.button_type_outline:focus,
+.button_type_outline:hover {
+  color: var(--clr-bg);
+}
+
 .button_type_outline:before {
   content: "";
   position: absolute;

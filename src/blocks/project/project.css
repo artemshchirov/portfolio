@@ -1,0 +1,14 @@
+.project {
+  padding: 2em;
+  margin: 0 auto;
+  text-align: center;
+  box-shadow: var(--shadow);
+  transition: transform 0.2s linear;
+}
+.project:hover {
+  transform: translateY(-7px);
+}
+
+.project .link_type_icon {
+  margin-left: 0.5em;
+}
