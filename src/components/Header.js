@@ -2,7 +2,7 @@ import React from "react";
 
 const Header = () => {
   //TODO: fas fa-moon
-  //TODO: fas fa-bars
+  // Разобраться с fas fas fa-moon fa-bars и их элементами
   return (
     <header className="header">
       <h3>
@@ -17,12 +17,12 @@ const Header = () => {
       <nav className="nav center">
         <ul className="nav__list center">
           <li className="nav__list-item">
-            <a className="link nav__list-link" href="#projects">
+            <a className="link link_type_link" href="#projects">
               Projects
             </a>
           </li>
           <li className="nav__list-item">
-            <a className="link nav__list-link" href="#skills">
+            <a className="link link_type_link" href="#skills">
               Skills
             </a>
           </li>
