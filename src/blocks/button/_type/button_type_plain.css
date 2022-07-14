@@ -1,0 +1,10 @@
+.button_type_plain {
+  text-transform: initial;
+  background-color: var(--clr-bg-alt);
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
+  border: 0;
+}
+
+.button_type_plain:hover {
+  transform: translateY(-4px);
+}

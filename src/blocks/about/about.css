@@ -1,0 +1,20 @@
+.about {
+  flex-direction: column;
+  align-items: flex-start;
+  margin-top: 2em;
+}
+
+.about .link_type_icon {
+  margin-right: 0.8em;
+}
+
+.about .button_type_outline {
+  margin-right: 1em;
+}
+
+@media screen and (min-width: 600px) {
+  .about {
+    align-items: center;
+    margin-top: 3em;
+  }
+}

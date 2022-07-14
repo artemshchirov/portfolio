@@ -1,0 +1,9 @@
+.section {
+  margin-top: 4em;
+}
+
+@media screen and (min-width: 600px) {
+  .section {
+    margin-top: 5em;
+  }
+}
