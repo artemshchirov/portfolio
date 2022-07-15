@@ -2,11 +2,8 @@ const Header = () => {
   return (
     <header className="header center">
       <h3>
-        <a
-          href="https://rajshekhar26.github.io/cleanfolio-minimal"
-          className="link"
-        >
-          AS.
+        <a href="https://example.com" className="link">
+          A.
         </a>
       </h3>
 
