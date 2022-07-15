@@ -46,16 +46,15 @@ const Main = () => {
 
         <div className="projects__grid">
           <div className="project">
-            <h3>Project 1</h3>
+            <h3>How to Learn</h3>
             <p className="project__description">
-              Ipsum accusamus ea excepturi aliquid eligendi amet. Explicabo
-              sapiente debitis labore sed ipsam Mollitia repellat illum quod
-              unde beatae Quis
+              Web page describing various learning strategies, from experts such
+              as Barbara Oakley, Feynman and Josh Kaufman.
             </p>
             <ul className="project__stack">
               <li className="project__stack-item">HTML</li>
               <li className="project__stack-item">CSS</li>
-              <li className="project__stack-item">React</li>
+              <li className="project__stack-item">JavaScript</li>
             </ul>
 
             <a
@@ -79,20 +78,21 @@ const Main = () => {
           </div>
 
           <div className="project">
-            <h3>Project 2</h3>
+            <h3>Around the World</h3>
             <p className="project__description">
-              Ipsum accusamus ea excepturi aliquid eligendi amet. Explicabo
-              sapiente debitis labore sed ipsam Mollitia repellat illum quod
-              unde beatae Quis
+              Web page showing a user's information and photos they have
+              uploaded from around the World. Images can be deleted, liked, and
+              new images added.
             </p>
             <ul className="project__stack">
-              <li className="project__stack-item">HTML</li>
-              <li className="project__stack-item">CSS</li>
               <li className="project__stack-item">React</li>
+              <li className="project__stack-item">Node.js</li>
+              <li className="project__stack-item">Express.js</li>
+              <li className="project__stack-item">MongoDB</li>
             </ul>
 
             <a
-              href="https://github.com"
+              href="https://github.com/artemschirov/mesto-react"
               aria-label="source code"
               className="link link_type_icon"
               target="_blank"
@@ -112,20 +112,18 @@ const Main = () => {
           </div>
 
           <div className="project">
-            <h3>Project 3</h3>
+            <h3>Travel</h3>
             <p className="project__description">
-              Ipsum accusamus ea excepturi aliquid eligendi amet. Explicabo
-              sapiente debitis labore sed ipsam Mollitia repellat illum quod
-              unde beatae Quis
+              Web page describing various stops along the way of a train trip
+              around the Portland.
             </p>
             <ul className="project__stack">
               <li className="project__stack-item">HTML</li>
               <li className="project__stack-item">CSS</li>
-              <li className="project__stack-item">React</li>
             </ul>
 
             <a
-              href="https://github.com"
+              href="https://github.com/artemschirov/russian-travel"
               aria-label="source code"
               className="link link_type_icon"
               target="_blank"
@@ -167,6 +165,7 @@ const Main = () => {
             MongoDB
           </li>
           <li className="skills__list-item button button_type_plain">Git</li>
+          <li className="skills__list-item button button_type_plain">GitHub</li>
           <li className="skills__list-item button button_type_plain">Python</li>
           <li className="skills__list-item button button_type_plain">Linux</li>
         </ul>

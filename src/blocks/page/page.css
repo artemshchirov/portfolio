@@ -67,7 +67,7 @@ h4 {
 }
 
 h1 {
-  font-size: 4rem;
+  font-size: 2.6rem;
 }
 
 h2 {
@@ -90,8 +90,8 @@ a {
   text-decoration: none;
 }
 
-@media (max-width: 900px) {
+@media (min-width: 900px) {
   h1 {
-    font-size: 2.6rem;
+    font-size: 4rem;
   }
 }

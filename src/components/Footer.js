@@ -7,7 +7,7 @@ const Footer = () => {
         target="_blank"
         rel="noopener noreferrer"
       >
-        link to github
+        Source
       </a>
     </footer>
   );
