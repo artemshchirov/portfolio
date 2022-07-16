@@ -1,7 +1,4 @@
 @import url(./vendor/normalize.css);
-@import url(./vendor/fonts/fonts.css);
-
-@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:regular,bold,italic&subset=latin,latin-ext");
 
 /* page */
 @import url(./blocks/page/page.css);

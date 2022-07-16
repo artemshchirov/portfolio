@@ -3,7 +3,7 @@ const Header = () => {
     <header className="header center">
       <h3>
         <a href="https://example.com" className="link">
-          A.
+          AS.
         </a>
       </h3>
 

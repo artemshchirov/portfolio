@@ -3,24 +3,31 @@ const Main = () => {
     <main className="content">
       <div className="about center">
         <h1 className="about__title">
-          Hi, I am <span className="about__name">Artem Shirov.</span>
+          Hi, I am <span className="about__name">Artem Shchirov.</span>
         </h1>
         <h2 className="about__role">A junior Front end Developer.</h2>
         <p className="about__description">
-          Consectetur neque sed quam molestiae consectetur nesciunt sit alias
-          Vitae libero perferendis reprehenderit optio veritatis Accusantium at
-          voluptatum cumque temporibus et Explicabo iste porro quis numquam
-          distinctio Repellendus adipisci nam perferendis amet eaque hic
-          Voluptates
+          For me technology equates to a Universe, and everyone's contribution
+          to this universe either creates personal planets, meteorites (gone
+          with the old in with the new), solar systems (necessary softwares and
+          projects such as coding tools or laptop) and the internet being a hub
+          to connect all these vast creation from one planet (project) to
+          another.
+          <br /> I am humbled to be a part of this very universe and I look
+          forward to seeing it evolve.
         </p>
 
         <div className="about__contact center">
-          <a href="https://example.com">
+          <a
+            href="https://drive.google.com/file/d/1ifyxXgMoB2A0kK5Cwl5EX7nsxnJuo8BM/view?usp=sharing"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <span className="button button_type_outline">Resume</span>
           </a>
 
           <a
-            href="https://github.com/artemschirov"
+            href="https://github.com/artemshchirov"
             aria-label="github"
             className="link link_type_icon"
             target="_blank"
@@ -30,7 +37,7 @@ const Main = () => {
           </a>
 
           <a
-            href="https://example.com"
+            href="https://www.linkedin.com/in/artemshchirov/"
             aria-label="linkedin"
             className="link link_type_icon"
             target="_blank"
@@ -67,7 +74,7 @@ const Main = () => {
               <i aria-hidden="true" className="fab fa-github"></i>
             </a>
             <a
-              href="https://example.com"
+              href="https://artemshchirov.github.io/how-to-learn/#en"
               aria-label="live preview"
               className="link link_type_icon"
               target="_blank"
@@ -92,7 +99,7 @@ const Main = () => {
             </ul>
 
             <a
-              href="https://github.com/artemschirov/mesto-react"
+              href="https://github.com/artemshchirov/mesto-react"
               aria-label="source code"
               className="link link_type_icon"
               target="_blank"
@@ -101,7 +108,7 @@ const Main = () => {
               <i aria-hidden="true" className="fab fa-github"></i>
             </a>
             <a
-              href="https://example.com"
+              href="https://artemshchirov.github.io/mesto/"
               aria-label="live preview"
               className="link link_type_icon"
               target="_blank"
@@ -123,7 +130,7 @@ const Main = () => {
             </ul>
 
             <a
-              href="https://github.com/artemschirov/russian-travel"
+              href="https://github.com/artemshchirov/russian-travel"
               aria-label="source code"
               className="link link_type_icon"
               target="_blank"
@@ -132,7 +139,7 @@ const Main = () => {
               <i aria-hidden="true" className="fab fa-github"></i>
             </a>
             <a
-              href="https://example.com"
+              href="https://artemshchirov.github.io/russian-travel/"
               aria-label="live preview"
               className="link link_type_icon"
               target="_blank"
@@ -176,6 +183,10 @@ const Main = () => {
         <a href="mailto:artemschirov@gmail.com">
           <span className="button button_type_outline">Email me</span>
         </a>
+        <br />
+        <p>mobile: +972584441705</p>
+        <p>email: artemshchirov@gmail.com</p>
+        <p>telegram: @mindisakey</p>
       </section>
     </main>
   );
