@@ -5,16 +5,13 @@ const Main = () => {
         <h1 className="about__title">
           Hi, I am <span className="about__name">Artem Shchirov.</span>
         </h1>
-        <h2 className="about__role">A junior Front end Developer.</h2>
+        <h2 className="about__role">A Junior Front End Developer.</h2>
         <p className="about__description">
-          For me technology equates to a Universe, and everyone's contribution
-          to this universe either creates personal planets, meteorites (gone
-          with the old in with the new), solar systems (necessary softwares and
-          projects such as coding tools or laptop) and the internet being a hub
-          to connect all these vast creation from one planet (project) to
-          another.
-          <br /> I am humbled to be a part of this very universe and I look
-          forward to seeing it evolve.
+          I'm a Full-stack web developer specializing in building (sometimes
+          designing) web platforms and applications.
+          <br />
+          Currently, I'm looking for some companies or teams to join and improve
+          my experience and knowledge.
         </p>
 
         <div className="about__contact center">
@@ -183,10 +180,11 @@ const Main = () => {
         <a href="mailto:artemschirov@gmail.com">
           <span className="button button_type_outline">Email me</span>
         </a>
-        <br />
-        <p>mobile: +972584441705</p>
-        <p>email: artemshchirov@gmail.com</p>
-        <p>telegram: @mindisakey</p>
+        <ul className="contact__items">
+          <li>artemshchirov@gmail.com</li>
+          <li>telegram: @mindisakey</li>
+          <li>+972584441705</li>
+        </ul>
       </section>
     </main>
   );

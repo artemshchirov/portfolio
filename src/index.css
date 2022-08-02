@@ -50,12 +50,14 @@
 @import url(./blocks/skills/__list/skills__list.css);
 @import url(./blocks/skills/__list-item/skills__list-item.css);
 
+/* contact */
 @import url(./blocks/contact/contact.css);
 @import url(./blocks/contact/__title/contact__title.css);
+@import url(./blocks/contact/__items/contact__items.css);
 
 /* footer */
 @import url(./blocks/footer/footer.css);
-@import url(./blocks/footer/__link/footer__linkl.css);
+@import url(./blocks/footer/__link/footer__link.css);
 
 @import url(./blocks/scrollup/scrollup.css);
 @import url(./blocks/scrollup/__link/scrollup__link.css);
