@@ -16,12 +16,12 @@ export default function ThemeContextWrapper(props) {
     }
   }, [theme]);
 
-  function changeTheme(theme) {
+  const changeTheme = (theme) => {
     setTheme(theme);
-  }
+  };
 
   return (
-    <ThemeContext.Provider value={{ changeTheme }}>
+    <ThemeContext.Provider value={{ theme, changeTheme }}>
       {props.children}
     </ThemeContext.Provider>
   );

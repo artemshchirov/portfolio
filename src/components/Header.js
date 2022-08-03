@@ -1,9 +1,20 @@
-import { useState } from "react";
+import { useState, useEffect, useContext } from "react";
 import { ThemeContext, themes } from "../contexts/ThemeContext";
 import ToggleDark from "./ToggleDark";
 
 const Header = () => {
   const [darkMode, setDarkMode] = useState(false);
+  const { changeTheme } = useContext(ThemeContext);
+
+  useEffect(() => {
+    window
+      .matchMedia("(prefers-color-scheme: dark)")
+      .addEventListener("change", (evt) => {
+        const colorScheme = evt.matches ? themes.dark : themes.light;
+        setDarkMode(colorScheme === themes.dark);
+        changeTheme(colorScheme);
+      });
+  }, []); //TODO: missing dependency
 
   return (
     <header className="header center">
@@ -33,7 +44,7 @@ const Header = () => {
         </ul>
 
         <ThemeContext.Consumer>
-          {({ changeTheme }) => (
+          {({ theme, changeTheme }) => (
             <ToggleDark
               toggleDark={() => {
                 setDarkMode(!darkMode);
