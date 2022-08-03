@@ -1,9 +1,19 @@
+import Typewriter from "typewriter-effect";
+
 const Main = () => {
   return (
     <main className="content">
       <div className="about center">
         <h1 className="about__title">
-          Hi, I am <span className="about__name">Artem Shchirov.</span>
+          <Typewriter
+            onInit={(typewriter) => {
+              typewriter
+                .typeString(
+                  `Hi, I am <span class="about__name">Artem Shchirov</span>.`
+                )
+                .start();
+            }}
+          />
         </h1>
         <h2 className="about__role">A Junior Front End Developer.</h2>
         <p className="about__description">

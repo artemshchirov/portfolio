@@ -7,6 +7,10 @@ const Header = () => {
   const { changeTheme } = useContext(ThemeContext);
 
   useEffect(() => {
+    if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
+      setDarkMode(!darkMode);
+      changeTheme(themes.dark);
+    }
     window
       .matchMedia("(prefers-color-scheme: dark)")
       .addEventListener("change", (evt) => {
