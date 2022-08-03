@@ -4,24 +4,24 @@ import { ThemeContext, themes } from "../contexts/ThemeContext";
 export default function ThemeContextWrapper(props) {
   const [theme, setTheme] = useState(themes.light);
 
-  function changeTheme(theme) {
-    setTheme(theme);
-  }
-
   useEffect(() => {
     switch (theme) {
       case themes.light:
-        document.documentElement.style.setProperty("--clr-bg", "#fcfcfc");
+        document.body.classList.remove("dark");
         break;
       case themes.dark:
       default:
-        document.documentElement.style.setProperty("--clr-bg", "#23283e");
+        document.body.classList.add("dark");
         break;
     }
   }, [theme]);
 
+  function changeTheme(theme) {
+    setTheme(theme);
+  }
+
   return (
-    <ThemeContext.Provider value={{ theme: theme, changeTheme: changeTheme }}>
+    <ThemeContext.Provider value={{ changeTheme }}>
       {props.children}
     </ThemeContext.Provider>
   );
