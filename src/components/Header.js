@@ -2,6 +2,7 @@ import { useState, useEffect, useContext } from "react";
 import { Squash as Hamburger } from "hamburger-react";
 import { ThemeContext, themes } from "../contexts/ThemeContext";
 import ToggleDark from "./ToggleDark";
+import NavMenu from "./NavMenu";
 
 const Header = () => {
   const [darkMode, setDarkMode] = useState(false);
@@ -31,30 +32,9 @@ const Header = () => {
         </a>
       </h3>
 
-      <nav className="nav center">
-        <ul className={`nav__list center ${isNavExpanded && "opened"}`}>
-          <li className="nav__list-item">
-            <a className="link link_type_nav" href="#projects">
-              Projects
-            </a>
-          </li>
-          <li className="nav__list-item">
-            <a className="link link_type_nav" href="#skills">
-              Skills
-            </a>
-          </li>
-          <li className="nav__list-item">
-            <a className="link link_type_nav" href="#contact">
-              Contact
-            </a>
-          </li>
-          <li className="nav__list-item">
-            <a className="link link_type_nav" href="#top">
-              Feedback
-            </a>
-          </li>
-        </ul>
+      <NavMenu isNavExpanded={isNavExpanded} />
 
+      <nav className="nav center">
         <ThemeContext.Consumer>
           {({ changeTheme }) => (
             <ToggleDark
@@ -67,10 +47,11 @@ const Header = () => {
         </ThemeContext.Consumer>
 
         <Hamburger
+          label="Show menu"
           toggled={isNavExpanded}
           toggle={setIsNavExpanded}
           size={20}
-          duration={0.2}
+          duration={0}
         />
       </nav>
     </header>
