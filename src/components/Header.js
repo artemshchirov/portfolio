@@ -1,10 +1,13 @@
 import { useState, useEffect, useContext } from "react";
+import { Squash as Hamburger } from "hamburger-react";
 import { ThemeContext, themes } from "../contexts/ThemeContext";
 import ToggleDark from "./ToggleDark";
 
 const Header = () => {
   const [darkMode, setDarkMode] = useState(false);
   const { changeTheme } = useContext(ThemeContext);
+
+  const [isNavExpanded, setIsNavExpanded] = useState(false);
 
   useEffect(() => {
     if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
@@ -23,20 +26,20 @@ const Header = () => {
   return (
     <header className="header center">
       <h3>
-        <a href="https://example.com" className="link">
+        <a href="https://artemshchirov.github.io/portfolio/" className="link">
           ⱯS
         </a>
       </h3>
 
       <nav className="nav center">
-        <ul className="nav__list center ">
+        <ul className={`nav__list center ${isNavExpanded && "opened"}`}>
           <li className="nav__list-item">
-            <a className="link link_type_link" href="#projects">
+            <a className="link link_type_nav" href="#projects">
               Projects
             </a>
           </li>
           <li className="nav__list-item">
-            <a className="link link_type_link" href="#skills">
+            <a className="link link_type_nav" href="#skills">
               Skills
             </a>
           </li>
@@ -45,10 +48,15 @@ const Header = () => {
               Contact
             </a>
           </li>
+          <li className="nav__list-item">
+            <a className="link link_type_nav" href="#top">
+              Feedback
+            </a>
+          </li>
         </ul>
 
         <ThemeContext.Consumer>
-          {({ theme, changeTheme }) => (
+          {({ changeTheme }) => (
             <ToggleDark
               toggleDark={() => {
                 setDarkMode(!darkMode);
@@ -58,13 +66,12 @@ const Header = () => {
           )}
         </ThemeContext.Consumer>
 
-        <button
-          type="button"
-          aria-label="toggle navigation"
-          className="button button_type_icon nav__hamburger"
-        >
-          <i aria-hidden="true" className="fas fa-bars"></i>
-        </button>
+        <Hamburger
+          toggled={isNavExpanded}
+          toggle={setIsNavExpanded}
+          size={20}
+          duration={0.2}
+        />
       </nav>
     </header>
   );
