@@ -1,6 +1,6 @@
 .nav__list {
   flex-direction: column;
-  justify-content: end;
+  justify-content: center;
   padding: 0 0;
   position: absolute;
   right: 0;

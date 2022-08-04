@@ -16,11 +16,6 @@ export default function NavMenu({ isNavExpanded }) {
           Contact
         </a>
       </li>
-      <li className="nav__list-item">
-        <a className="link link_type_nav" href="/feedback">
-          Feedback
-        </a>
-      </li>
     </ul>
   );
 }

@@ -1,5 +1,4 @@
 import { useState, useEffect, useContext } from "react";
-import { Squash as Hamburger } from "hamburger-react";
 import { ThemeContext, themes } from "../contexts/ThemeContext";
 import ToggleDark from "./ToggleDark";
 import NavMenu from "./NavMenu";
@@ -42,17 +41,25 @@ const Header = () => {
                 setDarkMode(!darkMode);
                 changeTheme(darkMode ? themes.light : themes.dark);
               }}
+              isDarkMode={darkMode}
             />
           )}
         </ThemeContext.Consumer>
 
-        <Hamburger
-          label="Show menu"
-          toggled={isNavExpanded}
-          toggle={setIsNavExpanded}
-          size={20}
-          duration={0}
-        />
+        <button
+          type="button"
+          aria-label="toggle navigation"
+          className="button button_type_icon nav__hamburger"
+          isNavExpanded={isNavExpanded}
+          onClick={() => {
+            setIsNavExpanded(!isNavExpanded);
+          }}
+        >
+          <i
+            aria-hidden="true"
+            className={`fas ${isNavExpanded ? "fa-times" : "fa-bars"} `}
+          ></i>
+        </button>
       </nav>
     </header>
   );
