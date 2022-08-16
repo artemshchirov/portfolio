@@ -1,4 +1,4 @@
-import Typewriter from "typewriter-effect";
+import Typewriter from 'typewriter-effect';
 
 const Main = () => {
   return (
@@ -15,10 +15,10 @@ const Main = () => {
             }}
           />
         </h1>
-        <h2 className="about__role">A Junior Front End Developer.</h2>
+        <h2 className="about__role">A Junior Web Developer.</h2>
         <p className="about__description">
-          I'm a Full-stack web developer specializing in building (sometimes
-          designing) web platforms and applications.
+          I'm a Junior Full-stack web developer specializing in building
+          (sometimes designing) web platforms and applications.
           <br />
           Currently, I'm looking for some companies or teams to join and improve
           my experience and knowledge.

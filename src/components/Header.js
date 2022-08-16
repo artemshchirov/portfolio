@@ -1,8 +1,8 @@
-import { useState, useEffect, useContext } from "react";
-import { Squash as Hamburger } from "hamburger-react";
-import { ThemeContext, themes } from "../contexts/ThemeContext";
-import ToggleDark from "./ToggleDark";
-import NavMenu from "./NavMenu";
+import { useState, useEffect, useContext } from 'react';
+import { Squash as Hamburger } from 'hamburger-react';
+import { ThemeContext, themes } from '../contexts/ThemeContext';
+import ToggleDark from './ToggleDark';
+import NavMenu from './NavMenu';
 
 const Header = () => {
   const [darkMode, setDarkMode] = useState(false);
@@ -11,13 +11,13 @@ const Header = () => {
   const [isNavExpanded, setIsNavExpanded] = useState(false);
 
   useEffect(() => {
-    if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
+    if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
       setDarkMode(!darkMode);
       changeTheme(themes.dark);
     }
     window
-      .matchMedia("(prefers-color-scheme: dark)")
-      .addEventListener("change", (evt) => {
+      .matchMedia('(prefers-color-scheme: dark)')
+      .addEventListener('change', (evt) => {
         const colorScheme = evt.matches ? themes.dark : themes.light;
         setDarkMode(colorScheme === themes.dark);
         changeTheme(colorScheme);
@@ -42,6 +42,7 @@ const Header = () => {
                 setDarkMode(!darkMode);
                 changeTheme(darkMode ? themes.light : themes.dark);
               }}
+              isDarkMode={darkMode}
             />
           )}
         </ThemeContext.Consumer>
