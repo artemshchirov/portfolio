@@ -40,7 +40,7 @@
 @import url(./blocks/projects/__grid/projects__grid.css);
 /* project */
 @import url(./blocks/project/project.css);
-@import url(./blocks/project/__description/project__description.css);
+@import url(./blocks/project/__subtitle/project__subtitle.css);
 @import url(./blocks/project/__stack/project__stack.css);
 @import url(./blocks/project/__stack-item/project__stack-item.css);
 

@@ -1,6 +1,6 @@
 .project__stack {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: no-wrap;
   justify-content: center;
   margin: 1.2em 0;
 }

@@ -1,6 +1,4 @@
 const ToggleDark = ({ toggleDark, isDarkMode }) => {
-  console.log('isDarkMode: ', isDarkMode);
-  
   return (
     <button
       type="button"
@@ -13,7 +11,7 @@ const ToggleDark = ({ toggleDark, isDarkMode }) => {
       <i
         aria-hidden="true"
         id="btn-theme"
-        className={`fas ${isDarkMode ? "fa-sun" : "fa-moon"}`}
+        className={`fas ${isDarkMode ? 'fa-sun' : 'fa-moon'}`}
       ></i>
     </button>
   );

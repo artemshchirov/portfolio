@@ -1,6 +1,9 @@
 .project {
   padding: 2em;
   margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   text-align: center;
   box-shadow: var(--shadow);
   transition: transform 0.2s linear;
