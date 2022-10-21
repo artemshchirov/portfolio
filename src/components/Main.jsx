@@ -1,78 +1,8 @@
 import Typewriter from 'typewriter-effect';
-import Project from './Projects/Projects';
+import Projects from './Projects/Projects';
 import Skills from './Skills/Skills';
 import CustomLink from './CustomLink/CustomLink';
-
-const projects = [
-  {
-    id: 0,
-    title: 'How to Learn',
-    subtitle:
-      'Web page describing various learning strategies, from experts such as Barbara Oakley, Feynman and Josh Kaufman.',
-    stack: ['HTML', 'CSS', 'Javascript'],
-    github: 'https://github.com/artemshchirov/how-to-learn',
-    link: 'https://artemshchirov.github.io/how-to-learn/#en',
-  },
-  {
-    id: 1,
-    title: 'Around The World',
-    subtitle:
-      'Web page showing a user`s information and photos they have uploaded from around the World. Images can be deleted, liked, and new images added.',
-    stack: ['React', 'Node.js', 'Express.js', 'MongoDB'],
-    github: 'https://github.com/artemshchirov/mesto-react',
-    link: 'https://artemshchirov.github.io/mesto/',
-  },
-  {
-    id: 2,
-    title: 'Travel',
-    subtitle:
-      'Web page describing various stops along the way of a train trip around the Portland.',
-    stack: ['HTML', 'CSS'],
-    github: 'https://github.com/artemshchirov/russian-travel',
-    link: 'https://artemshchirov.github.io/russian-travel/',
-  },
-  {
-    id: 3,
-    title: 'Around The World',
-    subtitle:
-      'Web page showing a user`s information and photos they have uploaded from around the World. Images can be deleted, liked, and new images added.',
-    stack: ['React', 'Node.js', 'Express.js', 'MongoDB'],
-    github: 'https://github.com/artemshchirov/russian-travel',
-    link: 'https://artemshchirov.github.io/russian-travel/',
-  },
-  {
-    id: 4,
-    title: 'How to Learn',
-    subtitle:
-      'Web page describing various learning strategies, from experts such as Barbara Oakley, Feynman and Josh Kaufman.',
-    stack: ['HTML', 'CSS', 'Javascript'],
-    github: 'https://github.com/artemshchirov/russian-travel',
-    link: 'https://artemshchirov.github.io/russian-travel/',
-  },
-  {
-    id: 5,
-    title: 'Travel',
-    subtitle:
-      'Web page describing various stops along the way of a train trip around the Portland.',
-    stack: ['HTML', 'CSS'],
-    github: 'https://github.com/artemshchirov/russian-travel',
-    link: 'https://artemshchirov.github.io/russian-travel/',
-  },
-];
-
-const skills = [
-  'HTML',
-  'CSS',
-  'JavaScript',
-  'React.js',
-  'Node.js',
-  'Express',
-  'MongoDB',
-  'Git',
-  'GitHub',
-  'Python',
-  'Linux',
-];
+import { PROJECTS, SKILLS } from '../utils/constants';
 
 const Main = () => {
   return (
@@ -125,24 +55,12 @@ const Main = () => {
 
       <section className="projects section" id="projects">
         <h2 className="title projects__title">Projects</h2>
-
-        <div className="projects__grid">
-          {projects.map((project) => (
-            <Project
-              key={project.id}
-              title={project.title}
-              subtitle={project.subtitle}
-              stack={project.stack}
-              link={project.link}
-              github={project.github}
-            />
-          ))}
-        </div>
+        <Projects cards={PROJECTS} />
       </section>
 
       <section className="skills section" id="skills">
         <h2 className="title skills__title">Skills</h2>
-        <Skills items={skills} />
+        <Skills items={SKILLS} />
       </section>
 
       <section className="contact section center" id="contact">
