@@ -1,11 +1,12 @@
-import React from "react";
-import ReactDOM from "react-dom/client";
-import "./index.css";
-import App from "./components/App";
-import reportWebVitals from "./reportWebVitals";
-import ThemeContextWrapper from "./contexts/ThemeContextWrapper";
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+import './index.css';
+import './i18next';
+import App from './components/App';
+import reportWebVitals from './reportWebVitals';
+import ThemeContextWrapper from './contexts/ThemeContextWrapper';
 
-const root = ReactDOM.createRoot(document.getElementById("root"));
+const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <ThemeContextWrapper>
     <React.StrictMode>

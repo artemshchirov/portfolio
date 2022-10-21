@@ -1,9 +1,9 @@
-import Header from "./Header";
-import Main from "./Main";
-import Footer from "./Footer";
-import ScrollButton from "./ScrollButton";
+import Header from './Header';
+import Main from './Main';
+import Footer from './Footer';
+import ScrollButton from './ScrollButton';
 
-const App = () => {
+function App() {
   return (
     <div className="page">
       <div className="page__container">
@@ -14,6 +14,6 @@ const App = () => {
       </div>
     </div>
   );
-};
+}
 
 export default App;

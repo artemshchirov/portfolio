@@ -1,27 +1,27 @@
-import { useState, useEffect, useContext } from "react";
-import { ThemeContext, themes } from "../contexts/ThemeContext";
-import ToggleDark from "./ToggleDark";
-import NavMenu from "./NavMenu";
+import { useState, useEffect, useContext } from 'react';
+import { ThemeContext, themes } from '../contexts/ThemeContext';
+import ToggleDark from './ToggleDark';
+import NavMenu from './NavMenu';
 
-const Header = () => {
+function Header() {
   const [darkMode, setDarkMode] = useState(false);
   const { changeTheme } = useContext(ThemeContext);
 
   const [isNavExpanded, setIsNavExpanded] = useState(false);
 
   useEffect(() => {
-    if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
+    if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
       setDarkMode(!darkMode);
       changeTheme(themes.dark);
     }
     window
-      .matchMedia("(prefers-color-scheme: dark)")
-      .addEventListener("change", (evt) => {
+      .matchMedia('(prefers-color-scheme: dark)')
+      .addEventListener('change', (evt) => {
         const colorScheme = evt.matches ? themes.dark : themes.light;
         setDarkMode(colorScheme === themes.dark);
         changeTheme(colorScheme);
       });
-  }, []); //TODO: missing dependency
+  }, []); // TODO: missing dependency
 
   return (
     <header className="header center">
@@ -50,19 +50,18 @@ const Header = () => {
           type="button"
           aria-label="toggle navigation"
           className="button button_type_icon nav__hamburger"
-          isNavExpanded={isNavExpanded}
           onClick={() => {
             setIsNavExpanded(!isNavExpanded);
           }}
         >
           <i
             aria-hidden="true"
-            className={`fas ${isNavExpanded ? "fa-times" : "fa-bars"} `}
-          ></i>
+            className={`fas ${isNavExpanded ? 'fa-times' : 'fa-bars'}`}
+          />
         </button>
       </nav>
     </header>
   );
-};
+}
 
 export default Header;

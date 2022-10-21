@@ -2,7 +2,7 @@ import './Project.css';
 import Stack from '../Stack/Stack';
 import CustomLink from '../CustomLink/CustomLink';
 
-const Project = ({ title, subtitle, stack, github, link }) => {
+function Project({ title, subtitle, stack, github, link }) {
   return (
     <article className="project">
       <div className="project__description">
@@ -17,7 +17,7 @@ const Project = ({ title, subtitle, stack, github, link }) => {
           className="link_type_icon"
           ariaLabel="source code"
         >
-          <i aria-hidden="true" className="fab fa-github"></i>
+          <i aria-hidden="true" className="fab fa-github" />
         </CustomLink>
 
         <CustomLink
@@ -25,11 +25,11 @@ const Project = ({ title, subtitle, stack, github, link }) => {
           className="link_type_icon"
           ariaLabel="live preview"
         >
-          <i aria-hidden="true" className="fas fa-external-link-alt"></i>
+          <i aria-hidden="true" className="fas fa-external-link-alt" />
         </CustomLink>
       </div>
     </article>
   );
-};
+}
 
 export default Project;

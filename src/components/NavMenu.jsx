@@ -1,6 +1,6 @@
 export default function NavMenu({ isNavExpanded }) {
   return (
-    <ul className={`nav__list center ${isNavExpanded && "opened"}`}>
+    <ul className={`nav__list center ${isNavExpanded && 'opened'}`}>
       <li className="nav__list-item">
         <a className="link link_type_nav" href="#projects">
           Projects

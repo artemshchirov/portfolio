@@ -1,6 +1,6 @@
 import Project from '../Project/Project';
 
-const Projects = ({ cards }) => {
+function Projects({ cards }) {
   return (
     <div className="projects__grid">
       {cards.map((card) => (
@@ -15,6 +15,6 @@ const Projects = ({ cards }) => {
       ))}
     </div>
   );
-};
+}
 
 export default Projects;

@@ -1,6 +1,6 @@
-import { useState } from "react";
+import { useState } from 'react';
 
-const ScrollButton = () => {
+function ScrollButton() {
   const [visible, setVisible] = useState(false);
 
   const toggleVisible = () => {
@@ -15,21 +15,21 @@ const ScrollButton = () => {
   const scrollToTop = () => {
     window.scrollTo({
       top: 0,
-      behavior: "smooth",
+      behavior: 'smooth',
     });
   };
 
-  window.addEventListener("scroll", toggleVisible);
+  window.addEventListener('scroll', toggleVisible);
   return (
     <button
       className="scrollup__link"
       aria-label="Scroll up"
       onClick={scrollToTop}
-      style={{ display: visible ? "inline" : "none" }}
+      style={{ display: visible ? 'inline' : 'none' }}
     >
-      <i aria-hidden="true" className="fas fa-arrow-up"></i>
+      <i aria-hidden="true" className="fas fa-arrow-up" />
     </button>
   );
-};
+}
 
 export default ScrollButton;

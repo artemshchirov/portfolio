@@ -3,8 +3,10 @@ import Projects from './Projects/Projects';
 import Skills from './Skills/Skills';
 import CustomLink from './CustomLink/CustomLink';
 import { PROJECTS, SKILLS } from '../utils/constants';
+import { useTranslation } from 'react-i18next';
 
-const Main = () => {
+function Main() {
+  const { t, i18n } = useTranslation();
   return (
     <main className="content">
       <section className="about center">
@@ -13,18 +15,18 @@ const Main = () => {
             onInit={(typewriter) => {
               typewriter
                 .typeString(
-                  `Hi, I am <span class="about__name">Artem Shchirov</span>.`
+                  `Hi, I am <span class="about__name">Artem Shchirov</span>`
                 )
                 .start();
             }}
           />
         </h1>
-        <h2 className="about__role">A Junior Front End Developer.</h2>
+        <h2 className="about__role">{t("about__role")}</h2>
         <p className="about__description">
-          I'm a Full-stack web developer specializing in building (sometimes
+          I`m a Full-stack web developer specializing in building (sometimes
           designing) web platforms and applications.
           <br />
-          Currently, I'm looking for some companies or teams to join and improve
+          Currently, I`m looking for some companies or teams to join and improve
           my experience and knowledge.
         </p>
 
@@ -41,14 +43,14 @@ const Main = () => {
             className="link_type_icon"
             ariaLabel="github"
           >
-            <i aria-hidden="true" className="fab fa-github"></i>
+            <i aria-hidden="true" className="fab fa-github" />
           </CustomLink>
           <CustomLink
             path="https://www.linkedin.com/in/artemshchirov/"
             className="link_type_icon"
             ariaLabel="linkedin"
           >
-            <i aria-hidden="true" className="fab fa-linkedin"></i>
+            <i aria-hidden="true" className="fab fa-linkedin" />
           </CustomLink>
         </div>
       </section>
@@ -76,6 +78,6 @@ const Main = () => {
       </section>
     </main>
   );
-};
+}
 
 export default Main;

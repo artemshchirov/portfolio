@@ -1,7 +1,7 @@
 import './Stack.css';
 import StackItem from '../StackItem/StackItem';
 
-const Stack = ({ items }) => {
+function Stack({ items }) {
   return (
     <ul className="project__stack">
       {items.map((item) => (
@@ -9,6 +9,6 @@ const Stack = ({ items }) => {
       ))}
     </ul>
   );
-};
+}
 
 export default Stack;

@@ -1,13 +1,13 @@
 import Skill from '../Skill/Skill';
 
-const Skills = ({ items }) => {
+function Skills({ items }) {
   return (
     <ul className="skills__list">
       {items.map((item) => (
-        <Skill>{item}</Skill>
+        <Skill key={item}>{item}</Skill>
       ))}
     </ul>
   );
-};
+}
 
 export default Skills;

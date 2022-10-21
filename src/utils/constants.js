@@ -1,3 +1,18 @@
+const SKILLS = [
+  'HTML',
+  'CSS',
+  'JavaScript',
+  'React.js',
+  'Node.js',
+  'Express',
+  'MongoDB',
+  'SASS',
+  'Git',
+  'GitHub',
+  'Python',
+  'Linux',
+];
+
 const PROJECTS = [
   {
     id: 0,
@@ -55,19 +70,4 @@ const PROJECTS = [
   },
 ];
 
-const SKILLS = [
-  'HTML',
-  'CSS',
-  'JavaScript',
-  'React.js',
-  'Node.js',
-  'Express',
-  'MongoDB',
-  'SASS',
-  'Git',
-  'GitHub',
-  'Python',
-  'Linux',
-];
-
-export { PROJECTS, SKILLS };
+export { SKILLS, PROJECTS };
