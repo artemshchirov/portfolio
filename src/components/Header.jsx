@@ -21,7 +21,7 @@ function Header() {
         setDarkMode(colorScheme === themes.dark);
         changeTheme(colorScheme);
       });
-  }, []); // TODO: missing dependency
+  }, []);
 
   return (
     <header className="header center">

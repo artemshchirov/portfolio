@@ -7,6 +7,9 @@
   text-align: center;
   box-shadow: var(--shadow);
   transition: transform 0.2s linear;
+
+  /* animation: show-project 1s;
+  animation-iteration-count: 1; */
 }
 .project:hover {
   transform: translateY(-7px);
@@ -15,3 +18,13 @@
 .project .link_type_icon {
   margin-left: 0.5em;
 }
+
+/* @keyframes show-project {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+} */

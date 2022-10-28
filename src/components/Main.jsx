@@ -1,12 +1,49 @@
+import { useTranslation } from 'react-i18next';
+import { useEffect, useState } from 'react';
 import Typewriter from 'typewriter-effect';
+
 import Projects from './Projects/Projects';
 import Skills from './Skills/Skills';
 import CustomLink from './CustomLink/CustomLink';
-import { PROJECTS, SKILLS } from '../utils/constants';
-import { useTranslation } from 'react-i18next';
+import {
+  PROJECTS,
+  SKILLS,
+  CARD_COUNT,
+  CARD_BREAKPOINT,
+} from '../utils/constants';
+
+import useCardCount from '../hooks/useCardCount';
 
 function Main() {
-  const { t, i18n } = useTranslation();
+  const { t } = useTranslation();
+
+  const [displayedProjects, setDisplayedProjects] = useState([]);
+
+  const { countAddCards, startCountCards, setParamsCountCards } = useCardCount(
+    CARD_COUNT,
+    CARD_BREAKPOINT
+  );
+
+  useEffect(() => {
+    setParamsCountCards('all');
+    window.addEventListener('resize', setParamsCountCards);
+    return () => window.removeEventListener('resize', setParamsCountCards);
+  }, []);
+
+  useEffect(() => {
+    setDisplayedProjects(PROJECTS.slice(0, startCountCards));
+  }, [startCountCards]);
+
+  const showMoreProjects = () => {
+    const startIndex = displayedProjects.length;
+    const endIndex = startIndex + countAddCards;
+
+    setDisplayedProjects([
+      ...displayedProjects,
+      ...PROJECTS.slice(startIndex, endIndex),
+    ]);
+  };
+
   return (
     <main className="content">
       <section className="about center">
@@ -21,7 +58,7 @@ function Main() {
             }}
           />
         </h1>
-        <h2 className="about__role">{t("about__role")}</h2>
+        <h2 className="about__role">{t('about__role')}</h2>
         <p className="about__description">
           I`m a Full-stack web developer specializing in building (sometimes
           designing) web platforms and applications.
@@ -57,7 +94,18 @@ function Main() {
 
       <section className="projects section" id="projects">
         <h2 className="title projects__title">Projects</h2>
-        <Projects cards={PROJECTS} />
+        <Projects cards={displayedProjects} />
+      </section>
+
+      <section className="projects__load">
+        {PROJECTS.length !== displayedProjects.length && (
+          <button
+            className="button button_type_outline"
+            onClick={showMoreProjects}
+          >
+            Show more projects
+          </button>
+        )}
       </section>
 
       <section className="skills section" id="skills">

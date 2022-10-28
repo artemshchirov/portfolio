@@ -1,5 +1,7 @@
 import Project from '../Project/Project';
 
+import './Projects.css';
+
 function Projects({ cards }) {
   return (
     <div className="projects__grid">

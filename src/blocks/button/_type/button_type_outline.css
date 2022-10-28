@@ -6,13 +6,13 @@
   z-index: 1;
 }
 
-.button_type_outline:focus,
+.button_type_outline:active,
 .button_type_outline:hover {
   color: var(--clr-bg);
 }
 
 .button_type_outline:before {
-  content: "";
+  content: '';
   position: absolute;
   background-color: var(--clr-primary);
   right: 100%;
@@ -24,6 +24,6 @@
 }
 
 .button_type_outline:hover::before,
-.button_type_outline:focus::before {
+.button_type_outline:active::before {
   right: 0;
 }
