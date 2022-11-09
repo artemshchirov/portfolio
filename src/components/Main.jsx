@@ -15,7 +15,7 @@ import {
 
 import useCardCount from '../hooks/useCardCount';
 
-function Main() {
+function Main({ showAlert }) {
   const { t } = useTranslation();
 
   const [displayedProjects, setDisplayedProjects] = useState([]);
@@ -70,7 +70,7 @@ function Main() {
 
         <div className="about__contact center">
           <a
-            href="https://drive.google.com/file/d/1ifyxXgMoB2A0kK5Cwl5EX7nsxnJuo8BM/view?usp=sharing"
+            href="https://drive.google.com/file/d/1lKj8WiW8CJ8sSe4lEilVamFLLIi2zJjG/view?usp=sharing"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -116,7 +116,13 @@ function Main() {
 
       <section className="contact section center" id="contact">
         <h2 className="title contact__title">Contact</h2>
-        <a href="mailto:artemschirov@gmail.com">
+        <a
+          href="mailto:artemschirov@gmail.com"
+          onClick={() => {
+            navigator.clipboard.writeText('artemshchirov@gmail.com');
+            showAlert('email address copied to clipboard');
+          }}
+        >
           <span className="button button_type_outline">Email me</span>
         </a>
         <ul className="contact__items">
