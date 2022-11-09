@@ -95,33 +95,6 @@ const PROJECTS = [
     github: 'https://github.com/artemshchirov/russian-travel',
     link: 'https://artemshchirov.github.io/russian-travel/',
   },
-  {
-    id: 9,
-    title: 'Around The World',
-    subtitle:
-      'Web page showing a user`s information and photos they have uploaded from around the World. Images can be deleted, liked, and new images added.',
-    stack: ['React', 'Node.js', 'Express.js', 'MongoDB'],
-    github: 'https://github.com/artemshchirov/russian-travel',
-    link: 'https://artemshchirov.github.io/russian-travel/',
-  },
-  {
-    id: 10,
-    title: 'How to Learn',
-    subtitle:
-      'Web page describing various learning strategies, from experts such as Barbara Oakley, Feynman and Josh Kaufman.',
-    stack: ['HTML', 'CSS', 'Javascript'],
-    github: 'https://github.com/artemshchirov/russian-travel',
-    link: 'https://artemshchirov.github.io/russian-travel/',
-  },
-  {
-    id: 11,
-    title: 'Travel',
-    subtitle:
-      'Web page describing various stops along the way of a train trip around the Portland.',
-    stack: ['HTML', 'CSS'],
-    github: 'https://github.com/artemshchirov/russian-travel',
-    link: 'https://artemshchirov.github.io/russian-travel/',
-  },
 ];
 
 const CARD_COUNT = {

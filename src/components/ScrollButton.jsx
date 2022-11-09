@@ -24,6 +24,7 @@ function ScrollButton() {
   return (
     <button
       className="scrollup__link"
+      type="button"
       aria-label="Scroll up"
       onClick={scrollToTop}
       style={{ display: visible ? 'inline' : 'none' }}

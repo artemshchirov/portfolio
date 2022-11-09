@@ -1,21 +1,25 @@
-export default function NavMenu({ isNavExpanded }) {
+import CustomLink from './CustomLink/CustomLink';
+
+function NavMenu({ isNavExpanded }) {
   return (
     <ul className={`nav__list center ${isNavExpanded && 'opened'}`}>
       <li className="nav__list-item">
-        <a className="link link_type_nav" href="#projects">
+        <CustomLink className="link_type_nav" path="#projects">
           Projects
-        </a>
+        </CustomLink>
       </li>
       <li className="nav__list-item">
-        <a className="link link_type_nav" href="#skills">
+        <CustomLink className="link_type_nav" path="#skills">
           Skills
-        </a>
+        </CustomLink>
       </li>
       <li className="nav__list-item">
-        <a className="link link_type_nav" href="#contact">
+        <CustomLink className="link_type_nav" path="#contact">
           Contact
-        </a>
+        </CustomLink>
       </li>
     </ul>
   );
 }
+
+export default NavMenu;

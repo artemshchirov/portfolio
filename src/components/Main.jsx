@@ -5,6 +5,7 @@ import Typewriter from 'typewriter-effect';
 import Projects from './Projects/Projects';
 import Skills from './Skills/Skills';
 import CustomLink from './CustomLink/CustomLink';
+
 import {
   PROJECTS,
   SKILLS,
@@ -52,7 +53,7 @@ function Main() {
             onInit={(typewriter) => {
               typewriter
                 .typeString(
-                  `Hi, I am <span class="about__name">Artem Shchirov</span>`
+                  `Hi, I am <span class="about__name">Artem Shchirov</span>.`
                 )
                 .start();
             }}

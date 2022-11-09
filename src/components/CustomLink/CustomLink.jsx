@@ -57,7 +57,7 @@ function CustomLink({
 
 CustomLink.propTypes = {
   path: PropTypes.string.isRequired,
-  className: PropTypes.string.isRequired,
+  className: PropTypes.string,
   children: PropTypes.node.isRequired,
   target: PropTypes.string,
   activeClassName: PropTypes.string,

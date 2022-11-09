@@ -1,7 +1,10 @@
 import { useState, useEffect, useContext } from 'react';
 import { ThemeContext, themes } from '../contexts/ThemeContext';
+
 import ToggleDark from './ToggleDark';
 import NavMenu from './NavMenu';
+
+import CustomLink from './CustomLink/CustomLink';
 
 function Header() {
   const [darkMode, setDarkMode] = useState(false);
@@ -10,25 +13,29 @@ function Header() {
   const [isNavExpanded, setIsNavExpanded] = useState(false);
 
   useEffect(() => {
-    if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+    if (
+      (!localStorage.getItem('theme') &&
+        window.matchMedia('(prefers-color-scheme: dark)').matches) ||
+      localStorage.getItem('theme') === 'dark'
+    ) {
       setDarkMode(!darkMode);
       changeTheme(themes.dark);
     }
+
     window
       .matchMedia('(prefers-color-scheme: dark)')
       .addEventListener('change', (evt) => {
         const colorScheme = evt.matches ? themes.dark : themes.light;
         setDarkMode(colorScheme === themes.dark);
         changeTheme(colorScheme);
+        localStorage.setItem('theme', colorScheme);
       });
   }, []);
 
   return (
     <header className="header center">
       <h3>
-        <a href="https://artemshchirov.github.io/portfolio/" className="link">
-          ⱯS
-        </a>
+        <CustomLink path="https://github.com/artemshchirov">ⱯS</CustomLink>
       </h3>
 
       <NavMenu isNavExpanded={isNavExpanded} />
@@ -39,7 +46,9 @@ function Header() {
             <ToggleDark
               toggleDark={() => {
                 setDarkMode(!darkMode);
-                changeTheme(darkMode ? themes.light : themes.dark);
+                const currentTheme = darkMode ? themes.light : themes.dark;
+                changeTheme(currentTheme);
+                localStorage.setItem('theme', currentTheme);
               }}
               isDarkMode={darkMode}
             />
