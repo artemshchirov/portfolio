@@ -1,8 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
+import './index.scss';
 import './i18next';
-import App from './components/App';
+import App from './components/App/App';
 import reportWebVitals from './reportWebVitals';
 import ThemeContextWrapper from './contexts/ThemeContextWrapper';
 

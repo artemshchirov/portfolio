@@ -1,0 +1,48 @@
+.nav__hamburger {
+  display: flex;
+  margin-left: 0.8em;
+}
+
+/* @media screen and (min-width: 600px) {
+  .nav__hamburger {
+    display: none;
+    width: 1em;
+  }
+} */
+
+.nav__list-item {
+  margin: 0.5em 0;
+}
+
+.nav__list {
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 0;
+  position: absolute;
+  right: 0;
+  left: 0;
+  top: 5em;
+  background-color: var(--clr-bg);
+  width: 100%;
+  height: 0;
+  overflow: hidden;
+  transition: height 0.2s ease-in-out;
+  z-index: 1;
+}
+
+.nav__list.opened {
+  height: 250px;
+}
+
+@media screen and (min-width: 600px) {
+  .nav__list {
+    margin-right: 1.5em;
+    display: flex;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .nav__list-item {
+    margin-left: 1.5em;
+  }
+}

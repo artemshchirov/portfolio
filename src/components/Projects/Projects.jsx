@@ -1,6 +1,6 @@
 import Project from '../Project/Project';
 
-import './Projects.css';
+import './Projects.scss';
 
 function Projects({ cards }) {
   return (

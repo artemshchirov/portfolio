@@ -1,0 +1,36 @@
+.link {
+  color: var(--clr-primary);
+  padding: 0 0 0.3em 0;
+  position: relative;
+
+  &:hover {
+    color: var(--clr-primary);
+  }
+
+  &::before {
+    content: '';
+    display: inline;
+    width: 0%;
+    height: 0.2em;
+    position: absolute;
+    bottom: 0;
+    background-color: var(--clr-primary);
+    transition: width 0.2s ease-in;
+  }
+
+  &:hover::before,
+  :focus::before {
+    width: 100%;
+  }
+
+  &_type_nav {
+    color: var(--clr-fg);
+    text-transform: lowercase;
+    font-weight: 500;
+  }
+
+  &_type_icon {
+    color: var(--clr-fg);
+    font-size: 1.2rem;
+  }
+}

@@ -1,9 +1,0 @@
-.nav__list-item {
-  margin: 0.5em 0;
-}
-
-@media screen and (min-width: 600px) {
-  .nav__list-item {
-    margin-left: 1.5em;
-  }
-}

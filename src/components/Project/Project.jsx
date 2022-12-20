@@ -1,6 +1,7 @@
-import './Project.css';
-import Stack from '../Stack/Stack';
-import CustomLink from '../CustomLink/CustomLink';
+import Stack from './Stack';
+import CustomLink from '../ui/CustomLink/CustomLink';
+
+import './Project.scss';
 
 function Project({ title, subtitle, stack, github, link }) {
   return (

@@ -1,0 +1,92 @@
+@import './styles/global-imports';
+
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  outline: 0;
+  background-color: inherit;
+  color: inherit;
+  font-family: inherit;
+  font-size: inherit;
+  box-shadow: none;
+  box-sizing: border-box;
+}
+
+.Typewriter__cursor {
+  color: gray;
+  display: inline-block;
+  transform: scale(0.25, 1);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+:root {
+  --clr-bg: #fcfcfc;
+  --clr-bg-alt: #fff;
+  --clr-fg: #555;
+  --clr-fg-alt: #444;
+  --clr-primary: #2978b5;
+  --shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.dark {
+  --clr-bg: #23283e;
+  --clr-bg-alt: #2a2f4c;
+  --clr-fg: #bdbddd;
+  --clr-fg-alt: #cdcdff;
+  --clr-primary: #90a0d9;
+  --shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
+    rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+
+::-moz-selection {
+  background: var(--clr-primary);
+  color: var(--clr-bg);
+}
+
+::-webkit-selection,
+::selection {
+  background: var(--clr-primary);
+  color: var(--clr-bg);
+}
+
+h1,
+h2,
+h3,
+h4 {
+  line-height: 1.2;
+  color: var(--clr-fg-alt);
+}
+
+h1 {
+  font-size: 2.6rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+h4 {
+  font-size: 1.3rem;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+@include md(lg) {
+  h1 {
+    font-size: 4rem;
+  }
+}

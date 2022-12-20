@@ -16,8 +16,8 @@ export default function ThemeContextWrapper(props) {
     }
   }, [theme]);
 
-  const changeTheme = (theme) => {
-    setTheme(theme);
+  const changeTheme = (newTheme) => {
+    setTheme(newTheme);
   };
 
   return (
