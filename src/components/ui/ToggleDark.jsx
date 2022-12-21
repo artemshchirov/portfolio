@@ -1,19 +1,18 @@
+import Button from './Button/Button';
+
 function ToggleDark({ toggleDark, isDarkMode }) {
   return (
-    <button
-      type="button"
+    <Button
       aria-label="toggle theme"
-      className="button button_type_icon"
-      onClick={() => {
-        toggleDark();
-      }}
+      className="button_type_icon"
+      onClick={() => toggleDark()}
     >
       <i
         aria-hidden="true"
         id="btn-theme"
         className={`fas ${isDarkMode ? 'fa-sun' : 'fa-moon'}`}
       />
-    </button>
+    </Button>
   );
 }
 

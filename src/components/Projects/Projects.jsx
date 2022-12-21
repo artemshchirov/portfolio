@@ -1,4 +1,5 @@
 import Project from '../Project/Project';
+import Button from '../ui/Button/Button';
 
 import './Projects.scss';
 
@@ -20,9 +21,13 @@ const Projects = ({ cards, allProjects, displayedProjects, onClick }) => {
 
       <div className="projects__load">
         {allProjects !== displayedProjects.length && (
-          <button className="button button_type_outline" onClick={onClick}>
+          <Button
+            aria-label="show more project cards"
+            className="button_type_outline"
+            onClick={onClick}
+          >
             Show more projects
-          </button>
+          </Button>
         )}
       </div>
     </>

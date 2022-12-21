@@ -13,7 +13,6 @@ function ScrollButton() {
       setVisible(false);
     }
   };
-  window.addEventListener('scroll', toggleVisible);
 
   const scrollToTop = () => {
     window.scrollTo({
@@ -22,12 +21,13 @@ function ScrollButton() {
     });
   };
 
+  // TODO: use effect
   window.addEventListener('scroll', toggleVisible);
+
   return (
     <button
-      className="scrollup__link"
-      type="button"
       aria-label="Scroll up"
+      className="scrollup__link"
       onClick={scrollToTop}
       style={{ display: visible ? 'inline' : 'none' }}
     >

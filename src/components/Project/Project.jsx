@@ -2,12 +2,15 @@ import Stack from './Stack';
 import CustomLink from '../ui/CustomLink/CustomLink';
 
 import './Project.scss';
+import Title from '../ui/Title/Title';
 
 function Project({ title, subtitle, stack, github, link }) {
   return (
     <article className="project">
       <div className="project__description">
-        <h3 className="project__title">{title}</h3>
+        <Title Tag="h3" className="project__title">
+          {title}
+        </Title>
         <p className="project__subtitle">{subtitle}</p>
       </div>
 

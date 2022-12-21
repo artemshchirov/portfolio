@@ -3,12 +3,12 @@ import { useState } from 'react';
 import Header from '../Header/Header';
 import Main from '../Main/Main';
 import Footer from '../Footer/Footer';
-import ScrollButton from '../ui/ScrooButton/ScrollButton';
+import ScrollButton from '../ui/ScrollButton/ScrollButton';
 import Alert from '../ui/Alert/Alert';
 
 import './App.scss';
 
-function App() {
+const App = () => {
   const [messageAlert, setMessageAlert] = useState(null);
   const [isActiveAlert, setIsActiveAlert] = useState(false);
 
@@ -31,6 +31,6 @@ function App() {
       </div>
     </div>
   );
-}
+};
 
 export default App;

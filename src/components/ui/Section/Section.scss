@@ -1,0 +1,11 @@
+@import '../../../styles/global-imports';
+
+.section {
+  margin-top: 4em;
+}
+
+@include md(md) {
+  .section {
+    margin-top: 5em;
+  }
+}

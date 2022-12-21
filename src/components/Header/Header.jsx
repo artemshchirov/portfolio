@@ -7,6 +7,8 @@ import NavMenu from '../NavMenu/NavMenu';
 import CustomLink from '../ui/CustomLink/CustomLink';
 
 import './Header.scss';
+import Button from '../ui/Button/Button';
+import Title from '../ui/Title/Title';
 
 function Header() {
   const [darkMode, setDarkMode] = useState(false);
@@ -36,9 +38,9 @@ function Header() {
 
   return (
     <header className="header center">
-      <h3>
+      <Title Tag="h3">
         <CustomLink path="https://github.com/artemshchirov">ⱯS</CustomLink>
-      </h3>
+      </Title>
 
       <NavMenu isNavExpanded={isNavExpanded}>
         <ThemeContext.Consumer>
@@ -55,19 +57,16 @@ function Header() {
           )}
         </ThemeContext.Consumer>
 
-        <button
-          type="button"
+        <Button
           aria-label="toggle navigation"
-          className="button button_type_icon nav__hamburger"
-          onClick={() => {
-            setIsNavExpanded(!isNavExpanded);
-          }}
+          className="button_type_icon nav__hamburger"
+          onClick={() => setIsNavExpanded(!isNavExpanded)}
         >
           <i
             aria-hidden="true"
             className={`fas ${isNavExpanded ? 'fa-times' : 'fa-bars'}`}
           />
-        </button>
+        </Button>
       </NavMenu>
     </header>
   );
