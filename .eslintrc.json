@@ -21,10 +21,6 @@
       "warn",
       {
         "singleQuote": true
-      },
-      "error",
-      {
-        "endOfLine": "auto"
       }
     ],
     "no-underscore-dangle": 0,

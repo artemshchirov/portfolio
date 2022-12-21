@@ -1,3 +1,5 @@
+@import '../../styles/global-imports';
+
 .header {
   height: 6em;
   max-width: 1100px;
@@ -6,7 +8,7 @@
   justify-content: space-between;
 }
 
-@media screen and (min-width: 600px) {
+@include md(md) {
   .header {
     height: 8em;
   }

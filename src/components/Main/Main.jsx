@@ -24,7 +24,7 @@ function Main({ showAlert }) {
 
   const { countAddCards, startCountCards, setParamsCountCards } = useCardCount(
     CARD_COUNT,
-    CARD_BREAKPOINT
+    CARD_BREAKPOINT,
   );
 
   useEffect(() => {
@@ -55,7 +55,7 @@ function Main({ showAlert }) {
             onInit={(typewriter) => {
               typewriter
                 .typeString(
-                  `Hi, I am <span class="about__name">Artem Shchirov</span>.`
+                  `Hi, I am <span class="about__name">Artem Shchirov</span>.`,
                 )
                 .start();
             }}
@@ -97,18 +97,12 @@ function Main({ showAlert }) {
 
       <section className="projects section" id="projects">
         <h2 className="title projects__title">Projects</h2>
-        <Projects cards={displayedProjects} />
-      </section>
-
-      <section className="projects__load">
-        {PROJECTS.length !== displayedProjects.length && (
-          <button
-            className="button button_type_outline"
-            onClick={showMoreProjects}
-          >
-            Show more projects
-          </button>
-        )}
+        <Projects
+          cards={displayedProjects}
+          allProjects={PROJECTS.length}
+          displayedProjects={displayedProjects.length}
+          onClick={showMoreProjects}
+        />
       </section>
 
       <section className="skills section" id="skills">

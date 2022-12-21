@@ -40,9 +40,7 @@ function Header() {
         <CustomLink path="https://github.com/artemshchirov">ⱯS</CustomLink>
       </h3>
 
-      <NavMenu isNavExpanded={isNavExpanded} />
-
-      <nav className="nav center">
+      <NavMenu isNavExpanded={isNavExpanded}>
         <ThemeContext.Consumer>
           {({ changeTheme }) => (
             <ToggleDark
@@ -70,7 +68,7 @@ function Header() {
             className={`fas ${isNavExpanded ? 'fa-times' : 'fa-bars'}`}
           />
         </button>
-      </nav>
+      </NavMenu>
     </header>
   );
 }

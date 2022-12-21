@@ -12,13 +12,13 @@
   visibility: hidden;
   opacity: 0;
   z-index: 100;
-}
 
-.alert_active {
-  visibility: visible;
-  opacity: 1;
-}
+  &_active {
+    visibility: visible;
+    opacity: 1;
+  }
 
-.alert__text {
-  color: #000;
+  .alert__text {
+    color: #000;
+  }
 }
