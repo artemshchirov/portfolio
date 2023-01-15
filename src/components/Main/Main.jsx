@@ -74,7 +74,7 @@ function Main({ showAlert }) {
 
         <div className="about__contact center">
           <CustomLink
-            path="https://drive.google.com/file/d/17ConIzaxMG8_kIpbgUuf_UGappAe3h5Y/view?usp=sharing"
+            path=""
             ariaLabel="resume"
           >
             <span className="button button_type_outline">Resume</span>
