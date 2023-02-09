@@ -13,6 +13,10 @@
     transform: translateY(-7px);
   }
 
+  &__title {
+    text-transform: none;
+  }
+
   &__stack {
     display: flex;
     flex-wrap: no-wrap;

@@ -3,7 +3,7 @@ import Button from '../ui/Button/Button';
 
 import './Projects.scss';
 
-const Projects = ({ cards, allProjects, displayedProjects, onClick }) => {
+function Projects({ cards, allProjects, displayedProjects, onClick }) {
   return (
     <>
       <div className="projects__grid">
@@ -32,6 +32,6 @@ const Projects = ({ cards, allProjects, displayedProjects, onClick }) => {
       </div>
     </>
   );
-};
+}
 
 export default Projects;

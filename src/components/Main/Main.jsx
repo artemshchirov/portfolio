@@ -26,14 +26,14 @@ function Main({ showAlert }) {
 
   const { countAddCards, startCountCards, setParamsCountCards } = useCardCount(
     CARD_COUNT,
-    CARD_BREAKPOINT,
+    CARD_BREAKPOINT
   );
 
   useEffect(() => {
     setParamsCountCards('all');
     window.addEventListener('resize', setParamsCountCards);
     return () => window.removeEventListener('resize', setParamsCountCards);
-  }, []);
+  }, [setParamsCountCards]);
 
   useEffect(() => {
     setDisplayedProjects(PROJECTS.slice(0, startCountCards));
@@ -57,7 +57,7 @@ function Main({ showAlert }) {
             onInit={(typewriter) => {
               typewriter
                 .typeString(
-                  `Hi, I am <span class="about__name">Artem Shchirov</span>.`,
+                  `Hi, I am <span class="about__name">Artem Shchirov</span>.`
                 )
                 .start();
             }}
@@ -73,23 +73,25 @@ function Main({ showAlert }) {
         </p>
 
         <div className="about__contact center">
-          <CustomLink
-            path="https://drive.google.com/file/d/17ConIzaxMG8_kIpbgUuf_UGappAe3h5Y/view?usp=sharing"
-            ariaLabel="resume"
+          <a
+            href="https://drive.google.com/file/d/1xd22C068yESKEoRQ1_6lFnOQZotZnFIi/view?usp=sharing"
+            aria-label="resume"
+            target="_blank"
+            rel="noreferrer"
           >
             <span className="button button_type_outline">Resume</span>
-          </CustomLink>
+          </a>
           <CustomLink
             path="https://github.com/artemshchirov"
             className="link_type_icon"
-            ariaLabel="github"
+            aria-label="github"
           >
             <i aria-hidden="true" className="fab fa-github" />
           </CustomLink>
           <CustomLink
             path="https://www.linkedin.com/in/artemshchirov/"
             className="link_type_icon"
-            ariaLabel="linkedin"
+            aria-label="linkedin"
           >
             <i aria-hidden="true" className="fab fa-linkedin" />
           </CustomLink>

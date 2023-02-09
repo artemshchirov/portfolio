@@ -1,5 +1,3 @@
-import CustomLink from '../ui/CustomLink/CustomLink';
-
 import './NavMenu.scss';
 
 function NavMenu({ isNavExpanded, children }) {
@@ -7,19 +5,19 @@ function NavMenu({ isNavExpanded, children }) {
     <nav className="nav center">
       <ul className={`nav__list center ${isNavExpanded && 'opened'}`}>
         <li className="nav__list-item">
-          <CustomLink className="link_type_nav" path="#projects">
+          <a className="link_type_nav link" href="#projects">
             Projects
-          </CustomLink>
+          </a>
         </li>
         <li className="nav__list-item">
-          <CustomLink className="link_type_nav" path="#skills">
+          <a className="link_type_nav link" href="#skills">
             Skills
-          </CustomLink>
+          </a>
         </li>
         <li className="nav__list-item">
-          <CustomLink className="link_type_nav" path="#contact">
+          <a className="link_type_nav link" href="#contact">
             Contact
-          </CustomLink>
+          </a>
         </li>
       </ul>
       {children}

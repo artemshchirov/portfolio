@@ -8,7 +8,7 @@ import Alert from '../ui/Alert/Alert';
 
 import './App.scss';
 
-const App = () => {
+function App() {
   const [messageAlert, setMessageAlert] = useState(null);
   const [isActiveAlert, setIsActiveAlert] = useState(false);
 
@@ -31,6 +31,6 @@ const App = () => {
       </div>
     </div>
   );
-};
+}
 
 export default App;

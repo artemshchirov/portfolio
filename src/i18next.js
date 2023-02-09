@@ -5,7 +5,7 @@ i18next.use(initReactI18next).init({
   resources: {
     en: {
       translation: {
-        about__role: 'Web Developer',
+        about__role: 'Full Stack Developer',
       },
     },
     ru: {

@@ -1,12 +1,12 @@
 import './Skills.scss';
 
-const Skill = ({ children }) => {
+function Skill({ children }) {
   return (
     <li className="skills__list-item button button_type_plain">{children}</li>
   );
-};
+}
 
-const Skills = ({ items }) => {
+function Skills({ items }) {
   return (
     <ul className="skills__list">
       {items.map((item) => (
@@ -14,6 +14,6 @@ const Skills = ({ items }) => {
       ))}
     </ul>
   );
-};
+}
 
 export default Skills;

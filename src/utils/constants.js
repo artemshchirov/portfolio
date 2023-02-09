@@ -2,9 +2,10 @@ const SKILLS = [
   'HTML',
   'CSS',
   'SCSS',
+  'Tailwind CSS',
   'JavaScript',
-  'TypeScript',
   'React.js',
+  'TypeScript',
   'Git',
   'GitHub',
   'Node.js',
@@ -13,49 +14,85 @@ const SKILLS = [
   'SQL',
   'MongoDB',
   'Firebase',
-  'Python',
   'Linux',
+  'Python',
 ];
 
 const PROJECTS = [
   {
     id: 0,
-    title: 'Movies Explorer',
+    title: 'Electronic Store',
     subtitle:
-      'This is a multiple page website with a simple landing on the main page and search and filter functionality available after user registration.',
-    stack: ['React.js', 'Express.js', 'MongoDB', 'Nginx', 'i18next'],
-    github: 'https://github.com/artemshchirov/react-movies-explorer-api-full',
-    link: 'https://movies.explorer.project.nomoredomains.sbs',
+      'The online store app where buyers can see a catalog of products and electronically purchase them. Currently project at frontend and backend connection step.',
+    stack: ['React.js', 'TypeScript', 'NestJS', 'PostgreSQL'],
+    github: 'https://github.com/artemshchirov/react-store-nest',
+    link: 'https://github.com/artemshchirov/react-store-nest',
   },
   {
     id: 1,
-    title: 'Around',
+    title: 'Hackwagon',
     subtitle:
-      'Interactive gallery showing a user`s information and pictures they have uploaded online from around the World.',
-    stack: ['React.js', 'Express.js', 'MongoDB', 'Nginx', 'i18next'],
-    github: 'https://github.com/artemshchirov/react-around-api-full',
-    link: 'https://around.nomoredomains.sbs',
+      'The Hackwagon hackathon app features forms that allow you to gather data from users and send it to the backend. The full application enables you to create predictions for train arrival times.',
+    stack: ['React.js', 'TypeScript', 'TailwindCSS', 'Primereact'],
+    github: 'https://github.com/artemshchirov/hackwagon',
+    link: 'https://hackwagon.vercel.app/',
   },
   {
     id: 2,
+    title: 'DevRel',
+    subtitle:
+      'The Developer Relations hackathon has created a multi-page website equipped with tools for locating and analyzing data about active users and repositories on GitHub.',
+    stack: ['React.js', 'TypeScript', 'TailwindCSS', 'Primereact'],
+    github: 'https://github.com/artemshchirov/devrel-hack',
+    link: 'https://devrel-hack.vercel.app/',
+  },
+  {
+    id: 3,
+    title: 'Web Starter',
+    subtitle:
+      'A custom web starter template has been created for fast prototyping, primarily for use in hackathons. You can quickly create a new website and deploy it within a matter of minutes.',
+    stack: ['React.js', 'TypeScript', 'TailwindCSS', 'Primereact'],
+    github: 'https://github.com/artemshchirov/web-starter',
+    link: 'https://web-starter-gamma.vercel.app/about',
+  },
+  {
+    id: 4,
     title: 'Chess 2D',
     subtitle:
-      'A chess game written as an exercise to learn TypeScript and some associated tools.',
+      'A chess game was created as a learning exercise to familiarize oneself with TypeScript and some related tools.',
     stack: ['TypeScript', 'OOP', 'SCSS'],
     github: 'https://github.com/artemshchirov/ts-chess',
     link: 'https://github.com/artemshchirov/ts-chess',
   },
   {
-    id: 3,
+    id: 5,
+    title: 'Movies Explorer',
+    subtitle:
+      'This is a multiple page website with a landing on the main page and search and filter functionality available after user registration.',
+    stack: ['React.js', 'Express.js', 'MongoDB', 'Nginx', 'i18next'],
+    github: 'https://github.com/artemshchirov/react-movies-explorer-api-full',
+    link: 'https://movies.explorer.project.nomoredomains.sbs',
+  },
+  {
+    id: 6,
+    title: 'Around',
+    subtitle:
+      'The web gallery allows users to explore and share their personal experiences and memories from different places around the globe.',
+    stack: ['React.js', 'Express.js', 'MongoDB', 'Nginx', 'i18next'],
+    github: 'https://github.com/artemshchirov/react-around-api-full',
+    link: 'https://around.nomoredomains.sbs',
+  },
+  {
+    id: 7,
     title: 'Dialog',
     subtitle:
-      'Chat app that makes it easy to communicate with people anywhere by sending and receiving messages in real time. (In progress...)',
+      'Chat app that makes it easy to communicate with people anywhere by sending and receiving messages in real time.',
     stack: ['React.js', 'SCSS', 'BEM', 'Firebase'],
     github: 'https://github.com/artemshchirov/react-chat-app',
     link: 'https://chat-b4d42.web.app/',
   },
   {
-    id: 4,
+    id: 8,
     title: 'NestJS backend',
     subtitle:
       'Backend application getting started project written in NestJS with PostgreSQL and docs with Swagger UI.',
@@ -64,16 +101,16 @@ const PROJECTS = [
     link: 'https://github.com/artemshchirov/nestjs-start-docker',
   },
   {
-    id: 5,
+    id: 9,
     title: 'Portfolio',
     subtitle:
-      'Current web developer website that showcases best work, personality and talents.',
+      'Current website that showcases best web developer work, personality and talents.',
     stack: ['React.js', 'SCSS', 'BEM', 'i18next'],
     github: 'https://github.com/artemshchirov/portfolio',
     link: 'https://artemshchirov.github.io/portfolio/',
   },
   {
-    id: 6,
+    id: 10,
     title: 'Travel',
     subtitle:
       'Web page describing various stops along the way of a train trip around the Portland.',
@@ -82,7 +119,7 @@ const PROJECTS = [
     link: 'https://artemshchirov.github.io/travel/',
   },
   {
-    id: 7,
+    id: 11,
     title: 'Lubimovka',
     subtitle:
       'Team project web resource for theatre describing their next performance.',
@@ -91,7 +128,7 @@ const PROJECTS = [
     link: 'https://github.com/artemshchirov/lubimovka',
   },
   {
-    id: 8,
+    id: 12,
     title: 'How to Learn',
     subtitle:
       'Web page describing various learning strategies, from experts such as Barbara Oakley, Feynman and Josh Kaufman.',
@@ -100,7 +137,7 @@ const PROJECTS = [
     link: 'https://artemshchirov.github.io/how-to-learn/#en',
   },
   {
-    id: 9,
+    id: 13,
     title: 'Web console',
     subtitle:
       'A simple online console written as an exercise to learn React.js with styled-components library.',
@@ -109,7 +146,7 @@ const PROJECTS = [
     link: 'https://github.com/artemshchirov/react-console',
   },
   {
-    id: 10,
+    id: 14,
     title: 'Tic Tac Toe',
     subtitle: 'A simple XO game written as an exercise to learn React.js.',
     stack: ['React.js', 'CSS'],
@@ -118,7 +155,7 @@ const PROJECTS = [
   },
 
   {
-    id: 11,
+    id: 15,
     title: 'Weather-Cartoons',
     subtitle:
       'Getting started with Vue.js application that helps you find What To Watch When You Don`t Know What To Watch.',
@@ -127,7 +164,7 @@ const PROJECTS = [
     link: 'https://artemshchirov.github.io/vue-weather-cartoons/',
   },
   {
-    id: 12,
+    id: 16,
     title: 'Life',
     subtitle:
       'Variety of The Game of Life, also known simply as Life, is a cellular automaton.',

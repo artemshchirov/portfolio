@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
 import './ScrollButton.scss';
 
@@ -21,11 +21,14 @@ function ScrollButton() {
     });
   };
 
-  // TODO: use effect
-  window.addEventListener('scroll', toggleVisible);
+  useEffect(() => {
+    window.addEventListener('scroll', toggleVisible);
+    return () => window.removeEventListener('scroll', toggleVisible);
+  }, []);
 
   return (
     <button
+      type="button"
       aria-label="Scroll up"
       className="scrollup__link"
       onClick={scrollToTop}
