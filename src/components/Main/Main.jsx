@@ -74,12 +74,12 @@ function Main({ showAlert }) {
 
         <div className="about__contact center">
           <a
-            href="https://drive.google.com/file/d/1xd22C068yESKEoRQ1_6lFnOQZotZnFIi/view?usp=sharing"
+            href="https://drive.google.com/file/d/10sMUjLntSFlg-cpC2yXRaqwcGic8YQ5q/view?usp=sharing"
             aria-label="resume"
             target="_blank"
             rel="noreferrer"
           >
-            <span className="button button_type_outline">Resume</span>
+            <span className="button button_type_outline">Artem_CV.pdf</span>
           </a>
           <CustomLink
             path="https://github.com/artemshchirov"
@@ -103,7 +103,7 @@ function Main({ showAlert }) {
         <Projects
           cards={displayedProjects}
           allProjects={PROJECTS.length}
-          displayedProjects={displayedProjects.length}
+          displayedProjects={displayedProjects}
           onClick={showMoreProjects}
         />
       </Section>
