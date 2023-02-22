@@ -6,16 +6,17 @@ const SKILLS = [
   'JavaScript',
   'React.js',
   'TypeScript',
-  'Git',
-  'GitHub',
   'Node.js',
   'Express.js',
   'NestJS',
-  'SQL',
+  'Jest',
+  'PostgreSQL',
   'MongoDB',
   'Firebase',
-  'Linux',
   'Python',
+  'Linux',
+  'Git',
+  'Teamwork',
 ];
 
 const PROJECTS = [
@@ -84,7 +85,7 @@ const PROJECTS = [
   },
   {
     id: 7,
-    title: 'Around',
+    title: 'Around. React.js',
     subtitle:
       'The web gallery allows users to explore and share their personal experiences and memories from different places around the globe.',
     stack: ['React.js', 'Express.js', 'MongoDB', 'Nginx', 'i18next'],
@@ -93,6 +94,15 @@ const PROJECTS = [
   },
   {
     id: 8,
+    title: 'Around. JavaScript',
+    subtitle:
+      'The web gallery allows users to explore and share their personal experiences and memories from different places around the globe.',
+    stack: ['JavaScript', 'CSS', 'OOP', 'DOM', 'REST API'],
+    github: 'https://github.com/artemshchirov/around',
+    link: 'https://artemshchirov.github.io/around/',
+  },
+  {
+    id: 9,
     title: 'Dialog',
     subtitle:
       'Chat app that makes it easy to communicate with people anywhere by sending and receiving messages in real time.',
@@ -101,7 +111,7 @@ const PROJECTS = [
     link: 'https://chat-b4d42.web.app/',
   },
   {
-    id: 9,
+    id: 10,
     title: 'NestJS backend',
     subtitle:
       'Backend application getting started project written in NestJS with PostgreSQL and docs with Swagger UI.',
@@ -110,7 +120,7 @@ const PROJECTS = [
     link: 'https://github.com/artemshchirov/nestjs-start-docker',
   },
   {
-    id: 10,
+    id: 11,
     title: 'Portfolio',
     subtitle:
       'Current website that showcases best web developer work, personality and talents.',
@@ -119,7 +129,7 @@ const PROJECTS = [
     link: 'https://artemshchirov.github.io/portfolio/',
   },
   {
-    id: 11,
+    id: 12,
     title: 'Travel',
     subtitle:
       'Web page describing various stops along the way of a train trip around the Portland.',
@@ -128,7 +138,7 @@ const PROJECTS = [
     link: 'https://artemshchirov.github.io/travel/',
   },
   {
-    id: 12,
+    id: 13,
     title: 'Lubimovka',
     subtitle:
       'Team project web resource for theatre describing their next performance.',
@@ -137,7 +147,7 @@ const PROJECTS = [
     link: 'https://github.com/artemshchirov/lubimovka',
   },
   {
-    id: 13,
+    id: 14,
     title: 'How to Learn',
     subtitle:
       'Web page describing various learning strategies, from experts such as Barbara Oakley, Feynman and Josh Kaufman.',
@@ -146,7 +156,7 @@ const PROJECTS = [
     link: 'https://artemshchirov.github.io/how-to-learn/#en',
   },
   {
-    id: 14,
+    id: 15,
     title: 'Web console',
     subtitle:
       'A simple online console written as an exercise to learn React.js with styled-components library.',
@@ -155,7 +165,7 @@ const PROJECTS = [
     link: 'https://github.com/artemshchirov/react-console',
   },
   {
-    id: 15,
+    id: 16,
     title: 'Tic Tac Toe',
     subtitle: 'A simple XO game written as an exercise to learn React.js.',
     stack: ['React.js', 'CSS'],
@@ -164,20 +174,20 @@ const PROJECTS = [
   },
 
   {
-    id: 16,
+    id: 17,
     title: 'Weather-Cartoons',
     subtitle:
       'Getting started with Vue.js application that helps you find What To Watch When You Don`t Know What To Watch.',
-    stack: ['Vue.js', 'CSS'],
+    stack: ['Vue.js', 'CSS', 'REST API'],
     github: 'https://github.com/artemshchirov/vue-weather-cartoons',
     link: 'https://artemshchirov.github.io/vue-weather-cartoons/',
   },
   {
-    id: 17,
+    id: 18,
     title: 'Life',
     subtitle:
       'Variety of The Game of Life, also known simply as Life, is a cellular automaton.',
-    stack: ['Python', 'Pygame'],
+    stack: ['Python', 'Pygame', 'OOP', 'UI'],
     github: 'https://github.com/artemshchirov/life',
     link: 'https://github.com/artemshchirov/life',
   },

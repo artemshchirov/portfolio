@@ -74,7 +74,7 @@ function Main({ showAlert }) {
 
         <div className="about__contact center">
           <a
-            href="https://drive.google.com/file/d/1W2s1D_yYCdZ1VDSRkCx38HpbCx9rK07b/view?usp=sharing"
+            href="https://drive.google.com/file/d/15hDUm9spTX9FKfqStAMmX6DCM3ito_Fn/view?usp=sharing"
             aria-label="resume"
             target="_blank"
             rel="noreferrer"
