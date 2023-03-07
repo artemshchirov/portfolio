@@ -1,20 +1,20 @@
-import { useTranslation } from 'react-i18next';
 import { useEffect, useState } from 'react';
+import { useTranslation } from 'react-i18next';
 import Typewriter from 'typewriter-effect';
 
 import Projects from '../Projects/Projects';
 import Skills from '../Skills/Skills';
 import CustomLink from '../ui/CustomLink/CustomLink';
-import Title from '../ui/Title/Title';
 import Section from '../ui/Section/Section';
+import Title from '../ui/Title/Title';
 
 import './Main.scss';
 
 import {
+  CARD_BREAKPOINT,
+  CARD_COUNT,
   PROJECTS,
   SKILLS,
-  CARD_COUNT,
-  CARD_BREAKPOINT,
 } from '../../utils/constants';
 
 import useCardCount from '../../hooks/useCardCount';
@@ -74,7 +74,7 @@ function Main({ showAlert }) {
 
         <div className="about__contact center">
           <a
-            href="https://drive.google.com/file/d/15hDUm9spTX9FKfqStAMmX6DCM3ito_Fn/view?usp=sharing"
+            href="https://drive.google.com/file/d/1V1fAUsvfv0AIO03KLVWEooj7_PdH6-Xs/view?usp=sharing"
             aria-label="resume"
             target="_blank"
             rel="noreferrer"

@@ -184,10 +184,28 @@ const PROJECTS = [
   },
   {
     id: 18,
-    title: 'Life',
+    title: 'PyDew Valley',
+    subtitle:
+      'A Stardew Valley style game. This includes farming, a day and night cycle, weather effects and a merchant.',
+    stack: ['Python', 'Pygame', 'Tiled'],
+    github: 'https://github.com/artemshchirov/pydew-valley',
+    link: 'https://github.com/artemshchirov/pydew-valley',
+  },
+  {
+    id: 19,
+    title: 'PyZelda RPG',
+    subtitle:
+      'A Zelda style game. This includes weapons and enemies, a magic and spells, upgrades and a sound effects.',
+    stack: ['Python', 'Pygame', 'Tiled'],
+    github: 'https://github.com/artemshchirov/pyzelda-rpg',
+    link: 'https://github.com/artemshchirov/pyzelda-rpg',
+  },
+  {
+    id: 20,
+    title: 'The Game of Life',
     subtitle:
       'Variety of The Game of Life, also known simply as Life, is a cellular automaton.',
-    stack: ['Python', 'Pygame', 'OOP', 'UI'],
+    stack: ['Python', 'Pygame'],
     github: 'https://github.com/artemshchirov/life',
     link: 'https://github.com/artemshchirov/life',
   },
@@ -213,4 +231,4 @@ const CARD_BREAKPOINT = {
   ONE: 700,
 };
 
-export { SKILLS, PROJECTS, CARD_COUNT, CARD_BREAKPOINT };
+export { CARD_BREAKPOINT, CARD_COUNT, PROJECTS, SKILLS };
