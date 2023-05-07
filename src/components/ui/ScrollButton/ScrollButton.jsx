@@ -1,5 +1,6 @@
-import { useState, useEffect } from 'react';
+import { useEffect, useState } from 'react';
 
+import gaEvents from '../../../utils/events';
 import './ScrollButton.scss';
 
 function ScrollButton() {
@@ -19,6 +20,7 @@ function ScrollButton() {
       top: 0,
       behavior: 'smooth',
     });
+    gaEvents.eventClickScrollButton();
   };
 
   useEffect(() => {

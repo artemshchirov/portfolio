@@ -18,6 +18,7 @@ import {
 } from '../../utils/constants';
 
 import useCardCount from '../../hooks/useCardCount';
+import gaEvents from '../../utils/events';
 
 function Main({ showAlert }) {
   const { t } = useTranslation();
@@ -47,6 +48,8 @@ function Main({ showAlert }) {
       ...displayedProjects,
       ...PROJECTS.slice(startIndex, endIndex),
     ]);
+
+    gaEvents.eventClickShowProjects();
   };
 
   return (
@@ -78,6 +81,7 @@ function Main({ showAlert }) {
             aria-label="resume"
             target="_blank"
             rel="noreferrer"
+            onClick={() => gaEvents.eventClickDownloadCV()}
           >
             <span className="button button_type_outline">Artem_CV.pdf</span>
           </a>
@@ -86,12 +90,17 @@ function Main({ showAlert }) {
             className="link_type_icon"
             aria-label="github"
           >
-            <i aria-hidden="true" className="fab fa-github" />
+            <i
+              aria-hidden="true"
+              className="fab fa-github"
+              onClick={() => gaEvents.eventClickGitHub()}
+            />
           </CustomLink>
           <CustomLink
             path="https://www.linkedin.com/in/artemshchirov/"
             className="link_type_icon"
             aria-label="linkedin"
+            onClick={() => gaEvents.eventClickLinkedIn()}
           >
             <i aria-hidden="true" className="fab fa-linkedin" />
           </CustomLink>
@@ -120,6 +129,7 @@ function Main({ showAlert }) {
           onClick={() => {
             navigator.clipboard.writeText('artemshchirov@gmail.com');
             showAlert('email address copied to clipboard');
+            gaEvents.eventClickEmailMe();
           }}
         >
           <span className="button button_type_outline">Email me</span>

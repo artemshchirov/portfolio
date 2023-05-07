@@ -18,6 +18,7 @@ Client part of a graduation project of the web development course. This is a mul
 - React Router DOM
 - Working with forms
 - Localization i18next
+- Google Analytics
 
 ## Some of the skills used are
 

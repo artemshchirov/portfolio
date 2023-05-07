@@ -1,14 +1,15 @@
-import { useState, useEffect, useContext } from 'react';
+import { useContext, useEffect, useState } from 'react';
 import { ThemeContext, themes } from '../../contexts/ThemeContext';
 
-import ToggleDark from '../ui/ToggleDark';
 import NavMenu from '../NavMenu/NavMenu';
+import ToggleDark from '../ui/ToggleDark';
 
 import CustomLink from '../ui/CustomLink/CustomLink';
 
-import './Header.scss';
+import gaEvents from '../../utils/events';
 import Button from '../ui/Button/Button';
 import Title from '../ui/Title/Title';
+import './Header.scss';
 
 function Header() {
   const [darkMode, setDarkMode] = useState(false);
@@ -51,6 +52,7 @@ function Header() {
                 const currentTheme = darkMode ? themes.light : themes.dark;
                 changeTheme(currentTheme);
                 localStorage.setItem('theme', currentTheme);
+                gaEvents.eventClickChangeTheme();
               }}
               isDarkMode={darkMode}
             />
@@ -60,7 +62,10 @@ function Header() {
         <Button
           aria-label="toggle navigation"
           className="button_type_icon nav__hamburger"
-          onClick={() => setIsNavExpanded(!isNavExpanded)}
+          onClick={() => {
+            setIsNavExpanded(!isNavExpanded);
+            gaEvents.eventClickBurgerMenu();
+          }}
         >
           <i
             aria-hidden="true"

@@ -1,3 +1,4 @@
+import gaEvents from '../../utils/events';
 import './Footer.scss';
 
 function Footer() {
@@ -8,6 +9,7 @@ function Footer() {
         className="link footer__link"
         target="_blank"
         rel="noopener noreferrer"
+        onClick={() => gaEvents.eventClickSource()}
       >
         source
       </a>

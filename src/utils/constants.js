@@ -9,11 +9,12 @@ const SKILLS = [
   'Node.js',
   'Express.js',
   'NestJS',
-  'Jest',
-  'PostgreSQL',
-  'MongoDB',
-  'Firebase',
   'Python',
+  'Django',
+  'SQL',
+  'MongoDB',
+  'QA',
+  'Firebase',
   'Linux',
   'Git',
   'Teamwork',
@@ -22,21 +23,21 @@ const SKILLS = [
 const PROJECTS = [
   {
     id: 0,
+    title: 'Work Calendar',
+    subtitle:
+      'An application that allows you to select a date and register your day off in the calendar with a notification to the director.',
+    stack: ['React.js', 'TypeScript', 'TailwindCSS', 'Firebase'],
+    github: 'https://github.com/artemshchirov/work-calendar',
+    link: 'https://work-calendar.vercel.app/',
+  },
+  {
+    id: 1,
     title: 'Electronic Store',
     subtitle:
       'The online store app where buyers can see a catalog of products and electronically purchase them. Currently project at frontend and backend connection step.',
     stack: ['React.js', 'TypeScript', 'NestJS', 'PostgreSQL'],
     github: 'https://github.com/artemshchirov/react-store-nest',
     link: 'https://github.com/artemshchirov/react-store-nest',
-  },
-  {
-    id: 1,
-    title: 'Hackwagon',
-    subtitle:
-      'The Hackwagon hackathon app features forms that allow you to gather data from users and send it to the backend. The full application enables you to create predictions for train arrival times.',
-    stack: ['React.js', 'TypeScript', 'TailwindCSS', 'Primereact'],
-    github: 'https://github.com/artemshchirov/hackwagon',
-    link: 'https://hackwagon.vercel.app/',
   },
   {
     id: 2,
@@ -49,12 +50,12 @@ const PROJECTS = [
   },
   {
     id: 3,
-    title: 'Work Calendar',
+    title: 'Hackwagon',
     subtitle:
-      'An application that allows you to select a date and register your day off in the calendar with a notification to the director.',
-    stack: ['React.js', 'TypeScript', 'TailwindCSS', 'Firebase'],
-    github: 'https://github.com/artemshchirov/work-calendar',
-    link: 'https://work-calendar.vercel.app/',
+      'The Hackwagon hackathon app features forms that allow you to gather data from users and send it to the backend. The full application enables you to create predictions for train arrival times.',
+    stack: ['React.js', 'TypeScript', 'TailwindCSS', 'Primereact'],
+    github: 'https://github.com/artemshchirov/hackwagon',
+    link: 'https://hackwagon.vercel.app/',
   },
   {
     id: 4,
