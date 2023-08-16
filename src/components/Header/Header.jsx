@@ -39,7 +39,7 @@ function Header() {
 
   return (
     <header className="header center">
-      <Title Tag="h3">
+      <Title className="header__logo" Tag="h3">
         <CustomLink path="https://github.com/artemshchirov">ⱯS</CustomLink>
       </Title>
 

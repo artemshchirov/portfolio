@@ -8,6 +8,10 @@
   justify-content: space-between;
 }
 
+.header__logo {
+  margin: 0;
+}
+
 @include md(md) {
   .header {
     height: 8em;

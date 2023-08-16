@@ -1,21 +1,24 @@
 const SKILLS = [
-  'HTML',
-  'CSS',
-  'SCSS',
-  'Tailwind CSS',
   'JavaScript',
-  'React.js',
   'TypeScript',
+  'React.js',
+  'Next.js',
+  'SCSS',
+  'Tailwind',
+  'Tests',
   'Node.js',
   'Express.js',
   'NestJS',
   'Python',
-  'Django',
   'SQL',
   'MongoDB',
-  'QA',
+  'Redis',
   'Firebase',
+  'Supabase',
+  'REST API',
+  'GraphQL',
   'Linux',
+  'Docker',
   'Git',
   'Teamwork',
 ];
@@ -23,21 +26,21 @@ const SKILLS = [
 const PROJECTS = [
   {
     id: 0,
-    title: 'Work Calendar',
+    title: 'Art Box Shop',
     subtitle:
-      'An application that allows you to select a date and register your day off in the calendar with a notification to the director.',
-    stack: ['React.js', 'TypeScript', 'TailwindCSS', 'Firebase'],
-    github: 'https://github.com/artemshchirov/work-calendar',
-    link: 'https://work-calendar.vercel.app/',
+      'The unique online store app allows buyers to view a catalog of products sorted by categories and purchase them online. The project is currently at the pre-launch stage, with the design completed by a web studio.',
+    stack: ['Next.js', 'TS', 'PostgreSQL', 'Prisma', 'GraphQL'],
+    github: 'https://github.com/artemshchirov/artboxshop',
+    link: 'https://artboxshop.co.il',
   },
   {
     id: 1,
-    title: 'Electronic Store',
+    title: 'Work Calendar',
     subtitle:
-      'The online store app where buyers can see a catalog of products and electronically purchase them. Currently project at frontend and backend connection step.',
-    stack: ['React.js', 'TypeScript', 'NestJS', 'PostgreSQL'],
-    github: 'https://github.com/artemshchirov/react-store-nest',
-    link: 'https://github.com/artemshchirov/react-store-nest',
+      'An application that allows you to select a date and register your day off in the calendar with a notification to the director. Currently, the application is being used by Beeri-print workers.',
+    stack: ['React.js', 'TypeScript', 'TailwindCSS', 'Firebase'],
+    github: 'https://github.com/artemshchirov/work-calendar',
+    link: 'https://vip-beeri.vercel.app',
   },
   {
     id: 2,
@@ -59,6 +62,15 @@ const PROJECTS = [
   },
   {
     id: 4,
+    title: 'Electronic Store',
+    subtitle:
+      'The online store app where buyers can see a catalog of products and electronically purchase them. Currently project at frontend and backend connection step.',
+    stack: ['React.js', 'TypeScript', 'NestJS', 'PostgreSQL'],
+    github: 'https://github.com/artemshchirov/react-store-nest',
+    link: 'https://github.com/artemshchirov/react-store-nest',
+  },
+  {
+    id: 5,
     title: 'Web Starter',
     subtitle:
       'A custom web starter template has been created for fast prototyping, primarily for use in hackathons. You can quickly create a new website and deploy it within a matter of minutes.',
@@ -67,16 +79,16 @@ const PROJECTS = [
     link: 'https://web-starter-gamma.vercel.app/',
   },
   {
-    id: 5,
+    id: 6,
     title: 'Chess 2D',
     subtitle:
       'A chess game was created as a learning exercise to familiarize oneself with TypeScript and some related tools.',
-    stack: ['TypeScript', 'OOP', 'SCSS'],
+    stack: ['React.js', 'TypeScript', 'OOP', 'SCSS'],
     github: 'https://github.com/artemshchirov/ts-chess',
     link: 'https://github.com/artemshchirov/ts-chess',
   },
   {
-    id: 6,
+    id: 7,
     title: 'Movies Explorer',
     subtitle:
       'This is a multiple page website with a landing on the main page and search and filter functionality available after user registration.',
@@ -85,16 +97,16 @@ const PROJECTS = [
     link: 'https://movies.explorer.project.nomoredomains.sbs',
   },
   {
-    id: 7,
+    id: 8,
     title: 'Around. React.js',
     subtitle:
       'The web gallery allows users to explore and share their personal experiences and memories from different places around the globe.',
     stack: ['React.js', 'Express.js', 'MongoDB', 'Nginx', 'i18next'],
     github: 'https://github.com/artemshchirov/react-around-api-full',
-    link: 'https://around.nomoredomains.sbs',
+    link: 'https://artemshchirov.github.io/around/',
   },
   {
-    id: 8,
+    id: 9,
     title: 'Around. JavaScript',
     subtitle:
       'The web gallery allows users to explore and share their personal experiences and memories from different places around the globe.',
@@ -103,16 +115,16 @@ const PROJECTS = [
     link: 'https://artemshchirov.github.io/around/',
   },
   {
-    id: 9,
+    id: 10,
     title: 'Dialog',
     subtitle:
-      'Chat app that makes it easy to communicate with people anywhere by sending and receiving messages in real time.',
+      'Chat app that makes it easy to communicate with people anywhere by sending and receiving messages in real time. The project needs some refactoring; it is on my to-do list.',
     stack: ['React.js', 'SCSS', 'BEM', 'Firebase'],
     github: 'https://github.com/artemshchirov/react-chat-app',
     link: 'https://chat-b4d42.web.app/',
   },
   {
-    id: 10,
+    id: 11,
     title: 'NestJS backend',
     subtitle:
       'Backend application getting started project written in NestJS with PostgreSQL and docs with Swagger UI.',
@@ -121,7 +133,7 @@ const PROJECTS = [
     link: 'https://github.com/artemshchirov/nestjs-start-docker',
   },
   {
-    id: 11,
+    id: 12,
     title: 'Portfolio',
     subtitle:
       'Current website that showcases best web developer work, personality and talents.',
@@ -130,7 +142,7 @@ const PROJECTS = [
     link: 'https://artemshchirov.github.io/portfolio/',
   },
   {
-    id: 12,
+    id: 13,
     title: 'Travel',
     subtitle:
       'Web page describing various stops along the way of a train trip around the Portland.',
@@ -139,7 +151,7 @@ const PROJECTS = [
     link: 'https://artemshchirov.github.io/travel/',
   },
   {
-    id: 13,
+    id: 14,
     title: 'Lubimovka',
     subtitle:
       'Team project web resource for theatre describing their next performance.',
@@ -148,7 +160,7 @@ const PROJECTS = [
     link: 'https://github.com/artemshchirov/lubimovka',
   },
   {
-    id: 14,
+    id: 15,
     title: 'How to Learn',
     subtitle:
       'Web page describing various learning strategies, from experts such as Barbara Oakley, Feynman and Josh Kaufman.',
@@ -157,7 +169,7 @@ const PROJECTS = [
     link: 'https://artemshchirov.github.io/how-to-learn/#en',
   },
   {
-    id: 15,
+    id: 16,
     title: 'Web console',
     subtitle:
       'A simple online console written as an exercise to learn React.js with styled-components library.',
@@ -166,7 +178,7 @@ const PROJECTS = [
     link: 'https://github.com/artemshchirov/react-console',
   },
   {
-    id: 16,
+    id: 17,
     title: 'Tic Tac Toe',
     subtitle: 'A simple XO game written as an exercise to learn React.js.',
     stack: ['React.js', 'CSS'],
@@ -175,7 +187,7 @@ const PROJECTS = [
   },
 
   {
-    id: 17,
+    id: 18,
     title: 'Weather-Cartoons',
     subtitle:
       'Getting started with Vue.js application that helps you find What To Watch When You Don`t Know What To Watch.',
@@ -184,7 +196,7 @@ const PROJECTS = [
     link: 'https://artemshchirov.github.io/vue-weather-cartoons/',
   },
   {
-    id: 18,
+    id: 19,
     title: 'PyDew Valley',
     subtitle:
       'A Stardew Valley style game. This includes farming, a day and night cycle, weather effects and a merchant.',
@@ -193,7 +205,7 @@ const PROJECTS = [
     link: 'https://github.com/artemshchirov/pydew-valley',
   },
   {
-    id: 19,
+    id: 20,
     title: 'PyZelda RPG',
     subtitle:
       'A Zelda style game. This includes weapons and enemies, a magic and spells, upgrades and a sound effects.',
@@ -202,7 +214,7 @@ const PROJECTS = [
     link: 'https://github.com/artemshchirov/pyzelda-rpg',
   },
   {
-    id: 20,
+    id: 21,
     title: 'The Game of Life',
     subtitle:
       'Variety of The Game of Life, also known simply as Life, is a cellular automaton.',
