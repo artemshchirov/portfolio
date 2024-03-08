@@ -1,39 +1,31 @@
-import { useEffect, useState } from 'react';
-import { useTranslation } from 'react-i18next';
-import Typewriter from 'typewriter-effect';
+import { useEffect, useState } from "react";
+import { useTranslation } from "react-i18next";
+import Typewriter from "typewriter-effect";
 
-import Projects from '../Projects/Projects';
-import Skills from '../Skills/Skills';
-import CustomLink from '../ui/CustomLink/CustomLink';
-import Section from '../ui/Section/Section';
-import Title from '../ui/Title/Title';
+import Projects from "../Projects/Projects";
+import Skills from "../Skills/Skills";
+import CustomLink from "../ui/CustomLink/CustomLink";
+import Section from "../ui/Section/Section";
+import Title from "../ui/Title/Title";
 
-import './Main.scss';
+import "./Main.scss";
 
-import {
-  CARD_BREAKPOINT,
-  CARD_COUNT,
-  PROJECTS,
-  SKILLS,
-} from '../../utils/constants';
+import { CARD_BREAKPOINT, CARD_COUNT, PROJECTS, SKILLS } from "../../utils/constants";
 
-import useCardCount from '../../hooks/useCardCount';
-import gaEvents from '../../utils/events';
+import useCardCount from "../../hooks/useCardCount";
+import gaEvents from "../../utils/events";
 
 function Main({ showAlert }) {
   const { t } = useTranslation();
 
   const [displayedProjects, setDisplayedProjects] = useState([]);
 
-  const { countAddCards, startCountCards, setParamsCountCards } = useCardCount(
-    CARD_COUNT,
-    CARD_BREAKPOINT
-  );
+  const { countAddCards, startCountCards, setParamsCountCards } = useCardCount(CARD_COUNT, CARD_BREAKPOINT);
 
   useEffect(() => {
-    setParamsCountCards('all');
-    window.addEventListener('resize', setParamsCountCards);
-    return () => window.removeEventListener('resize', setParamsCountCards);
+    setParamsCountCards("all");
+    window.addEventListener("resize", setParamsCountCards);
+    return () => window.removeEventListener("resize", setParamsCountCards);
   }, [setParamsCountCards]);
 
   useEffect(() => {
@@ -44,10 +36,7 @@ function Main({ showAlert }) {
     const startIndex = displayedProjects.length;
     const endIndex = startIndex + countAddCards;
 
-    setDisplayedProjects([
-      ...displayedProjects,
-      ...PROJECTS.slice(startIndex, endIndex),
-    ]);
+    setDisplayedProjects([...displayedProjects, ...PROJECTS.slice(startIndex, endIndex)]);
 
     gaEvents.eventClickShowProjects();
   };
@@ -58,26 +47,20 @@ function Main({ showAlert }) {
         <Title Tag="h1" className="about__title">
           <Typewriter
             onInit={(typewriter) => {
-              typewriter
-                .typeString(
-                  `Hi, I am <span class="about__name">Artem Shchirov</span>.`
-                )
-                .start();
+              typewriter.typeString(`Hi, I am <span class="about__name">Artem Shchirov</span>.`).start();
             }}
           />
         </Title>
-        <Title className="about__role">{t('about__role')}</Title>
+        <Title className="about__role">{t("about__role")}</Title>
         <p className="about__description">
-          I`m a Web Developer specializing in building (sometimes designing) web
-          platforms and applications.
+          I`m a Web Developer specializing in building (sometimes designing) web platforms and applications.
           <br />
-          Currently, I`m looking for some companies or teams to join and improve
-          my experience and knowledge.
+          Currently, I`m looking for some companies or teams to join and improve my experience and knowledge.
         </p>
 
         <div className="about__contact center">
           <a
-            href="https://drive.google.com/file/d/1mXT4kb3p0-KSlVqNnnQfx_q1UZm1S8Zh/view?usp=sharing"
+            href="https://drive.google.com/file/d/1bB-v54ywcNSLm126Jt00vsjQI-Viieeo/view?usp=sharing"
             aria-label="resume"
             target="_blank"
             rel="noreferrer"
@@ -85,16 +68,8 @@ function Main({ showAlert }) {
           >
             <span className="button button_type_outline">Artem_CV.pdf</span>
           </a>
-          <CustomLink
-            path="https://github.com/artemshchirov"
-            className="link_type_icon"
-            aria-label="github"
-          >
-            <i
-              aria-hidden="true"
-              className="fab fa-github"
-              onClick={() => gaEvents.eventClickGitHub()}
-            />
+          <CustomLink path="https://github.com/artemshchirov" className="link_type_icon" aria-label="github">
+            <i aria-hidden="true" className="fab fa-github" onClick={() => gaEvents.eventClickGitHub()} />
           </CustomLink>
           <CustomLink
             path="https://www.linkedin.com/in/artemshchirov/"
@@ -127,8 +102,8 @@ function Main({ showAlert }) {
         <a
           href="mailto:artemshchirov@gmail.com"
           onClick={() => {
-            navigator.clipboard.writeText('artemshchirov@gmail.com');
-            showAlert('email address copied to clipboard');
+            navigator.clipboard.writeText("artemshchirov@gmail.com");
+            showAlert("email address copied to clipboard");
             gaEvents.eventClickEmailMe();
           }}
         >

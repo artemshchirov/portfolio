@@ -1,8 +1,8 @@
-import Stack from './Stack';
-import CustomLink from '../ui/CustomLink/CustomLink';
+import Stack from "./Stack";
+import CustomLink from "../ui/CustomLink/CustomLink";
 
-import './Project.scss';
-import Title from '../ui/Title/Title';
+import "./Project.scss";
+import Title from "../ui/Title/Title";
 
 function Project({ title, subtitle, stack, github, link }) {
   return (
@@ -16,19 +16,13 @@ function Project({ title, subtitle, stack, github, link }) {
 
       <div className="project__about">
         <Stack items={stack} />
-        <CustomLink
-          path={github}
-          className="link_type_icon"
-          ariaLabel="source code"
-        >
-          <i aria-hidden="true" className="fab fa-github" />
-        </CustomLink>
+        {github && (
+          <CustomLink path={github} className="link_type_icon" ariaLabel="source code">
+            <i aria-hidden="true" className="fab fa-github" />
+          </CustomLink>
+        )}
 
-        <CustomLink
-          path={link}
-          className="link_type_icon"
-          ariaLabel="live preview"
-        >
+        <CustomLink path={link} className="link_type_icon" ariaLabel="live preview">
           <i aria-hidden="true" className="fas fa-external-link-alt" />
         </CustomLink>
       </div>
