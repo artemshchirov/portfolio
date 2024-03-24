@@ -20,7 +20,10 @@ function Main({ showAlert }) {
 
   const [displayedProjects, setDisplayedProjects] = useState([]);
 
-  const { countAddCards, startCountCards, setParamsCountCards } = useCardCount(CARD_COUNT, CARD_BREAKPOINT);
+  const { countAddCards, startCountCards, setParamsCountCards } = useCardCount(
+    CARD_COUNT,
+    CARD_BREAKPOINT
+  );
 
   useEffect(() => {
     setParamsCountCards("all");
@@ -47,20 +50,24 @@ function Main({ showAlert }) {
         <Title Tag="h1" className="about__title">
           <Typewriter
             onInit={(typewriter) => {
-              typewriter.typeString(`Hi, I am <span class="about__name">Artem Shchirov</span>.`).start();
+              typewriter
+                .typeString(`Hi, I am <span class="about__name">Artem Shchirov</span>.`)
+                .start();
             }}
           />
         </Title>
         <Title className="about__role">{t("about__role")}</Title>
         <p className="about__description">
-          I`m a Web Developer specializing in building (sometimes designing) web platforms and applications.
+          I`m a Web Developer specializing in building (sometimes designing) web platforms and
+          applications.
           <br />
-          Currently, I`m looking for some companies or teams to join and improve my experience and knowledge.
+          Currently, I`m looking for some companies or teams to join and improve my experience and
+          knowledge.
         </p>
 
         <div className="about__contact center">
           <a
-            href="https://drive.google.com/file/d/1uJOWSIKwlCrCSROZRDNTjo5P1SqjuIjm/view?usp=sharing"
+            href="https://drive.google.com/file/d/1gZzHyqscckn9QgIZy7gjrYS4igNulIku/view?usp=sharing"
             aria-label="resume"
             target="_blank"
             rel="noreferrer"
@@ -68,8 +75,16 @@ function Main({ showAlert }) {
           >
             <span className="button button_type_outline">Artem_CV.pdf</span>
           </a>
-          <CustomLink path="https://github.com/artemshchirov" className="link_type_icon" aria-label="github">
-            <i aria-hidden="true" className="fab fa-github" onClick={() => gaEvents.eventClickGitHub()} />
+          <CustomLink
+            path="https://github.com/artemshchirov"
+            className="link_type_icon"
+            aria-label="github"
+          >
+            <i
+              aria-hidden="true"
+              className="fab fa-github"
+              onClick={() => gaEvents.eventClickGitHub()}
+            />
           </CustomLink>
           <CustomLink
             path="https://www.linkedin.com/in/artemshchirov/"
