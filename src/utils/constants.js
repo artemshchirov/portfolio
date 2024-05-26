@@ -171,20 +171,20 @@ const PROJECTS = [
   },
   {
     id: 22,
+    title: "Portfolio",
+    subtitle: "Current website that showcases best web developer work, personality and talents",
+    stack: ["React.js", "SCSS", "BEM", "i18next"],
+    github: "https://github.com/artemshchirov/portfolio",
+    link: "https://artemshchirov.github.io/portfolio/",
+  },
+  {
+    id: 23,
     title: "Dialog",
     subtitle:
       "Chat app that makes it easy to communicate with people anywhere by sending and receiving messages in real time. The project needs some refactoring; it is on my to-do list",
     stack: ["React.js", "SCSS", "BEM", "Firebase"],
     github: "https://github.com/artemshchirov/react-chat-app",
     link: "https://chat-b4d42.web.app/",
-  },
-  {
-    id: 24,
-    title: "Portfolio",
-    subtitle: "Current website that showcases best web developer work, personality and talents",
-    stack: ["React.js", "SCSS", "BEM", "i18next"],
-    github: "https://github.com/artemshchirov/portfolio",
-    link: "https://artemshchirov.github.io/portfolio/",
   },
   {
     id: 25,
@@ -230,14 +230,6 @@ const PROJECTS = [
     link: "https://artemshchirov.github.io/vue-weather-cartoons/",
   },
   {
-    id: 33,
-    title: "The Game of Life",
-    subtitle: "Variety of The Game of Life, also known simply as Life, is a cellular automaton",
-    stack: ["Python", "Pygame"],
-    github: "https://github.com/artemshchirov/life",
-    link: "https://github.com/artemshchirov/life",
-  },
-  {
     id: 31,
     title: "PyDew Valley",
     subtitle:
@@ -251,6 +243,23 @@ const PROJECTS = [
     title: "PyZelda RPG",
     subtitle:
       "A Zelda style game. This includes weapons and enemies, a magic and spells, upgrades and a sound effects",
+    stack: ["Python", "Pygame", "Tiled"],
+    github: "https://github.com/artemshchirov/pymario-maker",
+    link: "https://github.com/artemshchirov/pymario-maker",
+  },
+  {
+    id: 33,
+    title: "The Game of Life",
+    subtitle: "Variety of The Game of Life, also known simply as Life, is a cellular automaton",
+    stack: ["Python", "Pygame"],
+    github: "https://github.com/artemshchirov/life",
+    link: "https://github.com/artemshchirov/life",
+  },
+  {
+    id: 34,
+    title: "Pymario Maker",
+    subtitle:
+      "Mario Maker style game in Python with a level editor, transitions, enemy behavior, animations, menus and a player camera.",
     stack: ["Python", "Pygame", "Tiled"],
     github: "https://github.com/artemshchirov/pyzelda-rpg",
     link: "https://github.com/artemshchirov/pyzelda-rpg",
