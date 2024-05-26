@@ -1,12 +1,14 @@
 const SKILLS = [
+  "HTML",
+  "CSS",
   "JavaScript",
   "TypeScript",
   "React.js",
   "Next.js",
-  "Nuxt3",
   "Vue.js",
+  "Nuxt3",
   "SCSS",
-  "Tailwind",
+  "TailwindCSS",
   "Node.js",
   "Express.js",
   "NestJS",
@@ -14,11 +16,11 @@ const SKILLS = [
   "PostgreSQL",
   "MongoDB",
   "Firebase",
-  "Linux",
-  "AWS S3",
+  "AWS",
   "Digital Ocean",
   "Vercel",
   "Docker",
+  "Linux",
   "Postman",
   "Git",
   "Teamwork",
@@ -26,7 +28,7 @@ const SKILLS = [
 
 const PROJECTS = [
   {
-    id: 7,
+    id: 6,
     title: "Widegamut Landing",
     subtitle:
       "The startup approached with a request to create a landing page with ability collect user data based on their Figma design 'as soon as possible'. From scratch to deployment, they received a Pixel Perfect result in 3 days",
@@ -34,12 +36,21 @@ const PROJECTS = [
     link: "https://widegamut-landing.vercel.app/",
   },
   {
-    id: 8,
+    id: 7,
     title: "Widegamut",
     subtitle:
       "widegamut.co is a portfolio platform for filmmakers. Users can showcase their work, find inspiration, and collaborate with other filmmakers — all in one place. The project is currently at the pre-launch stage",
     stack: ["Next.js", "TS", "PostgreSQL", "Prisma", "NestJS"],
     link: "https://alpha.widegamut.co/",
+  },
+  {
+    id: 8,
+    title: "Photography Portfolio",
+    subtitle:
+      "Website where every shot turns into a story. The project is a personal portfolio of a photographer, showcasing their best work and providing a way to contact them. Built alongside with a Butcher Studio design team",
+    stack: ["Nuxt3", "TypeScript", "SCSS", "GSAP", "OOP"],
+    github: "https://github.com/artemshchirov/nadia-websito",
+    link: "https://nadyabeson.com",
   },
   {
     id: 9,
@@ -168,15 +179,6 @@ const PROJECTS = [
     link: "https://chat-b4d42.web.app/",
   },
   {
-    id: 23,
-    title: "NestJS backend",
-    subtitle:
-      "Backend application getting started project written in NestJS with PostgreSQL and docs with Swagger UI",
-    stack: ["NestJS", "SwaggerUI", "PostgreSQL", "Docker"],
-    github: "https://github.com/artemshchirov/nestjs-start-docker",
-    link: "https://github.com/artemshchirov/nestjs-start-docker",
-  },
-  {
     id: 24,
     title: "Portfolio",
     subtitle: "Current website that showcases best web developer work, personality and talents",
@@ -219,15 +221,6 @@ const PROJECTS = [
     link: "https://github.com/artemshchirov/react-console",
   },
   {
-    id: 29,
-    title: "Tic Tac Toe",
-    subtitle: "A simple XO game written as an exercise to learn React.js",
-    stack: ["React.js", "CSS"],
-    github: "https://github.com/artemshchirov/react-xo",
-    link: "https://github.com/artemshchirov/react-xo",
-  },
-
-  {
     id: 30,
     title: "Weather-Cartoons",
     subtitle:
@@ -235,6 +228,14 @@ const PROJECTS = [
     stack: ["Vue.js", "CSS", "REST API"],
     github: "https://github.com/artemshchirov/vue-weather-cartoons",
     link: "https://artemshchirov.github.io/vue-weather-cartoons/",
+  },
+  {
+    id: 33,
+    title: "The Game of Life",
+    subtitle: "Variety of The Game of Life, also known simply as Life, is a cellular automaton",
+    stack: ["Python", "Pygame"],
+    github: "https://github.com/artemshchirov/life",
+    link: "https://github.com/artemshchirov/life",
   },
   {
     id: 31,
@@ -253,14 +254,6 @@ const PROJECTS = [
     stack: ["Python", "Pygame", "Tiled"],
     github: "https://github.com/artemshchirov/pyzelda-rpg",
     link: "https://github.com/artemshchirov/pyzelda-rpg",
-  },
-  {
-    id: 33,
-    title: "The Game of Life",
-    subtitle: "Variety of The Game of Life, also known simply as Life, is a cellular automaton",
-    stack: ["Python", "Pygame"],
-    github: "https://github.com/artemshchirov/life",
-    link: "https://github.com/artemshchirov/life",
   },
 ];
 
