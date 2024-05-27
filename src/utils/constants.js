@@ -33,7 +33,7 @@ const PROJECTS = [
     subtitle:
       "The startup approached with a request to create a landing page with ability collect user data based on their Figma design 'as soon as possible'. From scratch to deployment, they received a Pixel Perfect result in 3 days",
     stack: ["Next.js", "TS", "Excel API", "TailwindCSS"],
-    link: "https://widegamut-landing.vercel.app/",
+    link: "https://lp.widegamut.co",
   },
   {
     id: 7,
@@ -41,7 +41,7 @@ const PROJECTS = [
     subtitle:
       "widegamut.co is a portfolio platform for filmmakers. Users can showcase their work, find inspiration, and collaborate with other filmmakers — all in one place. The project is currently at the pre-launch stage",
     stack: ["Next.js", "TS", "PostgreSQL", "Prisma", "NestJS"],
-    link: "https://alpha.widegamut.co/",
+    link: "https://beta.widegamut.co/stills",
   },
   {
     id: 8,
